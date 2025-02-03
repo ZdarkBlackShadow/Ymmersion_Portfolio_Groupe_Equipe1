@@ -1,8 +1,10 @@
+{{define "tableaudebord"}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
     <title>Tableau de bord</title>
 
 </head>
@@ -12,6 +14,8 @@
         <p>Bienvenue sur le tableau de bord</p>
         <h2>1ère épreuve : Dessiner une tête de creeper en HTML/CSS</h2>
         <h3>Epreuve réussie avec brio par Alexandre</h2>
+            {{.Datatdb}}
     </div>
 </body>
 </html>
+{{end}}

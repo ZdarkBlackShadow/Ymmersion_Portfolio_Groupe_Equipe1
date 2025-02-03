@@ -8,7 +8,9 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <h1>{{.Data}}</h1>
+    <pre><code>{{ .Data.CodeHTML }}</code></pre>
+    <br>
+    <pre><code>{{ .Data.CodeCSS }}</code></pre>
 </body>
 </html>
 {{end}}
