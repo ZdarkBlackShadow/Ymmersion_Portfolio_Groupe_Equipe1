@@ -12,3 +12,7 @@ type Epreuve struct {
 	Timer       int    `json:"timerInMinute"`
 	Date        string `json:"when"`
 }
+
+type DataTDB struct {
+	Datatdb string
+}
