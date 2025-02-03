@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Epreuve 1",
+        "description": "A l'aide des Langages HTML et CSS uniquement vous devez reproduire le dessin suivant.",
+        "image": "ImageEpreuve1.png",
+        "codeGo" : [""],
+        "codeHtml": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <title></title>\n        <meta name=\"description\" content=\"\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <link rel=\"stylesheet\" href=\"./style.css\">\n    </head>\n    <body>\n        <div class=\"font\">\n            <div class=\"oeil\">\n                <span></span>\n                <span></span>\n            </div>\n            <span class=\"nez\"></span>\n            <span class=\"bouche\"></span>\n            <div class=\"coinBouche\">\n                <span></span>\n                <span></span>\n            </div>\n        </div>\n        <p>\n            Minecraft\n        </p>\n        <script src=\"\" async defer></script>\n    </body>\n</html>",
+        "codeCss": "body {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n    height: 600px;\n}\n\n.font {\n    background-color: rgb(22, 215, 22);\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 300px;\n}\n\n.oeil {\n    display: flex;\n    justify-content: space-between;\n    margin-top: 50px;\n    width: 160px;\n}\n\n.oeil > span {\n    height: 50px;\n    width: 50px;\n    background-color: black;\n    border-color: black;\n}\n\n.nez {\n    width: 60px;\n    height: 30px;\n    background-color: black;\n}\n\n.bouche {\n    width: 120px;\n    height: 60px;\n    background-color: black;\n}\n\n.coinBouche {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 50px;\n    width: 120px;\n}\n\n.coinBouche > span {\n    width: 30px;\n    height: 30px;\n    background-color: black;\n}\n\np {\n    font-size: 2em;\n    font-family: Arial, Helvetica, sans-serif;\n}",
+        "finalResult": "imagefinaleepreuve1.png",
+        "timerInMinute" : 20,
+        "when": "Lundi 11H"
+    }
+]
