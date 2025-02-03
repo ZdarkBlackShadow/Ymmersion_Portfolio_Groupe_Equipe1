@@ -16,9 +16,11 @@ func InitServer() {
 		log.Fatalf("Error parsing templates: %v", err)
 	}
 	http.HandleFunc("/exemple", Exemple)
+	http.HandleFunc("/tableaudebord", Tableaudebord)
 	fileserver := http.FileServer(http.Dir("./assets"))
 	http.Handle("/static/", http.StripPrefix("/static/", fileserver))
 	//Initialisation du serveur
 	fmt.Println("http://localhost:8080/exemple")
 	http.ListenAndServe("localhost:8080", nil)
 }
+
