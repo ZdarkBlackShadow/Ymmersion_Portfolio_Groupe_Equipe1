@@ -33,3 +33,7 @@ type Exercice struct {
 	CodeCSS     string   `json:"codecss"`
 	FinalImage  string   `json:"finalresult"`
 }
+
+type DataTDB struct {
+	Datatdb string
+}
