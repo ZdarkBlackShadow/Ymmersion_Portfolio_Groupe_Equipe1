@@ -1,0 +1,22 @@
+{{define "Adrien"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epreuve Adrien</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</head>
+<body>
+    <h1>Epreuve 2</h1>
+    <h2>Consigne</h2>
+    <p>{{.Description}}</p>
+    <h2>Code</h2>
+        <p class="language-go">{{range .CodeGo}}{{.}}<br>{{end}}</p>
+        <pre><code ></code></pre>
+    <h2>Rendu du code</h2>
+    <p>{{.FinalResultCode}}</p>
+</body>
+</html>
+{{end}}

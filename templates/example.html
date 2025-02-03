@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/style.css">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
-    <h1>{{.Data}}</h1>
+    <button onclick="window.location.href='http://localhost:8080/tableaudebord';">Accéder au tableau de bord</button>
+    <pre><code>{{ .Data.CodeHTML }}</code></pre>
+    <br>
+    <pre><code>{{ .Data.CodeCSS }}</code></pre>
 </body>
 </html>
 {{end}}
