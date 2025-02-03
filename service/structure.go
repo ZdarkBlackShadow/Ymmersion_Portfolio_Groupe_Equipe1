@@ -33,14 +33,17 @@ type UserStruct struct {
 }
 
 type Exercice struct {
-	ID          int      `json:"id"`
-	Name        string   `json:"name"`
-	Description string   `json:"description"`
-	Image       string   `json:"image"`
-	CodeGo      []string `json:"codeGo"`
-	CodeHTML    string   `json:"codehtml"`
-	CodeCSS     string   `json:"codecss"`
-	FinalImage  string   `json:"finalresult"`
+	ID              int      `json:"id"`
+	Name            string   `json:"name"`
+	Description     string   `json:"description"`
+	Image           string   `json:"image"`
+	CodeGo          []string `json:"codeGo"`
+	CodeHTML        string   `json:"codehtml"`
+	CodeCSS         string   `json:"codecss"`
+	FinalImage      string   `json:"finalresult"`
+	FinalResultCode string   `json:"finalResultCode"`
+	Timer           int      `json:"timerInMinute"`
+	When            string   `json:"when"`
 }
 
 type DataTDB struct {
