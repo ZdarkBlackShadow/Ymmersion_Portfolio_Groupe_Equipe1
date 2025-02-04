@@ -11,20 +11,43 @@
     <link rel="stylesheet" href="/static/css/adrien.css">
 </head>
 <body>
-    <h1>Epreuve 2</h1>
-    <h2>Consigne</h2>
-    <p class="consigne">{{.Description}}</p>
-    <h2>Exemple de rendu</h2>
-    <div class="terminal"><pre>{{ .ExempleRenduCode }}</pre></div>
-    <h2>Code</h2>
-<pre><code class="language-go">{{ .CodeGo }}</code></pre>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        Prism.highlightAll();
-    });
-</script>
-<h2>Rendu du code</h2>
-<div class="terminal"><pre>{{ .FinalResultCode }}</pre></div>
+    <h1>Devinette des nombres</h1>
+    <div class="container">
+        <div class="column">
+            <div class="consigne">
+                <h2>Consigne</h2>
+                <p>{{.Description}}</p>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Exemple de rendu</h2>
+            <div class="terminal"><pre>{{ .ExempleRenduCode }}</pre></div>
+        </div>
+        <div class="column">
+            <h2>Code</h2>
+            <pre><code class="language-go">{{ .CodeGo }}</code></pre>
+        </div>
+        <div class="column">
+            <h2>Rendu du code</h2>
+            <div class="terminal"><pre>{{ .FinalResultCode }}</pre></div>
+        </div>
+        <div class="column">
+            <h2>Detail de l'épreuve</h2>
+            <div class="detail">
+                <h3>Temps de l'épreuve : {{.Timer}} min</h3>
+                <h3>Quand : {{.When}}</h3>
+                <h3>Cométence utilisé</h3>
+                {{range .LearningLesson}}
+                    <p>{{.}}</p>
+                {{end}}
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            Prism.highlightAll();
+        });
+    </script>
 </body>
 </html>
 {{end}}

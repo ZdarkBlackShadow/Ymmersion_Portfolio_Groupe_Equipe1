@@ -1,19 +1,6 @@
 package service
 
-type Epreuve struct {
-	Id              string `json:"id"`
-	Name            string `json:"name"`
-	Description     string `json:"description"`
-	Img             string `json:"image"`
-	CodeGo          string `json:"codego"`
-	CodeHtml        string `json:"codeHtml"`
-	CodeCss         string `json:"codeCss"`
-	FinalResult     string `json:"finalResult"`
-	FinalResultCode string `json:"finalResultCode"`
-	Timer           int    `json:"timerInMinute"`
-	Date            string `json:"when"`
-}
-
+//Structures pour les menbres du groupe
 type User struct {
 	Name            string `json:"name"`
 	Description     string `json:"description"`
@@ -25,19 +12,21 @@ type UserStruct struct {
 	Data []User   `json:"data"`
 }
 
+//Structure pour les epreuves
 type Exercice struct {
-	ID               int    `json:"id"`
-	Name             string `json:"name"`
-	Description      string `json:"description"`
-	Image            string `json:"image"`
-	ExempleRenduCode string `json:"ExempleRendu"`
-	CodeGo           string `json:"codeGo"`
-	CodeHTML         string `json:"codehtml"`
-	CodeCSS          string `json:"codecss"`
-	FinalImage       string `json:"finalresult"`
-	FinalResultCode  string `json:"finalResultCode"`
-	Timer            int    `json:"timerInMinute"`
-	When             string `json:"when"`
+	ID               int      `json:"id"`
+	Name             string   `json:"name"`
+	Description      string   `json:"description"`
+	Image            string   `json:"image"`
+	ExempleRenduCode string   `json:"ExempleRendu"`
+	CodeGo           string   `json:"codeGo"`
+	CodeHTML         string   `json:"codehtml"`
+	CodeCSS          string   `json:"codecss"`
+	FinalImage       string   `json:"finalresult"`
+	FinalResultCode  string   `json:"finalResultCode"`
+	Timer            int      `json:"timerInMinute"`
+	When             string   `json:"when"`
+	LearningLesson   []string `json:"learningLesson"`
 }
 
 type DataTDB struct {
