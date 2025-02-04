@@ -1,0 +1,42 @@
+{
+    "lundi": [
+      {
+        "heure": "09:00",
+        "titre": "Réunion équipe",
+        "description": "Réunion pour discuter des projets de la semaine."
+      },
+      {
+        "heure": "14:00",
+        "titre": "Démo produit",
+        "description": "Démonstration du produit aux clients."
+      }
+    ],
+    "mardi": [
+      {
+        "heure": "10:00",
+        "titre": "Formation interne",
+        "description": "Formation sur la nouvelle technologie."
+      }
+    ],
+    "mercredi": [
+      {
+        "heure": "12:00",
+        "titre": "Déjeuner d'équipe",
+        "description": "Déjeuner avec toute l'équipe."
+      },
+      {
+        "heure": "16:00",
+        "titre": "Entretien recrutement",
+        "description": "Entretien pour un nouveau développeur."
+      }
+    ],
+    "jeudi": [],
+    "vendredi": [
+      {
+        "heure": "08:00",
+        "titre": "Réunion de suivi",
+        "description": "Réunion pour faire le point sur la semaine."
+      }
+    ]
+  }
+  
