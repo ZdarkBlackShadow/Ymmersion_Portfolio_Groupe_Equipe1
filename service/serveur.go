@@ -24,7 +24,6 @@ func InitServer() {
 	http.HandleFunc("/exemple", Exemple)
 	http.HandleFunc("/tableaudebord", Tableaudebord)
 	http.HandleFunc("/adrien", EpreuveAdrien)
-	http.HandleFunc("/tableau_epreuve", PageEpreuve)
 	http.HandleFunc("/alexandre", EpreuveAlexandre)
 	http.HandleFunc("/calendar", calendarHandler)
 	http.HandleFunc("/alexis", EpreuveAlexis)
