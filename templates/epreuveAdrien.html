@@ -8,45 +8,21 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-go.min.js"></script>
-    <link rel="stylesheet" href="/static/adrien.css">
+    <link rel="stylesheet" href="/static/css/adrien.css">
 </head>
 <body>
     <h1>Epreuve 2</h1>
     <h2>Consigne</h2>
-    <p>{{.Description}}</p>
+    <p class="consigne">{{.Description}}</p>
     <h2>Code</h2>
-    <pre><code class="language-go">{{range .CodeGo}}{{.}}<br>{{end}}</code></pre>
-    <h2>Rendu du code</h2>
-    <p>{{.FinalResultCode}}</p>
-    <pre><code class="language-go">
-package main
-
-import (
-    "fmt"
-    "math/rand"
-    "time"
-)
-
-func main() {
-    var Find bool = false
-    var tentative int = 1
-    rand.Seed(time.Now().Unix())
-    Num := rand.Intn(100)
-    fmt.Println("Bienvenue dans le jeu de devinettes !\nJe pense à un nombre entre 1 et 99. Pouvez-vous le devinez ?")
-    for !Find {
-        var Data int
-        fmt.Scanln(&Data)
-        if Data < Num {
-            fmt.Println("C'est plus grand")
-        } else if Data == Num {
-            fmt.Printf("Bravo ! Vous avez trouvé le code en %d tentatives\n", tentative)
-            Find = true
-        } else {
-            fmt.Println("C'est plus petit")
-        }
-        tentative += 1
-    }
-}</code></pre>
+<pre><code class="language-go">{{ .CodeGo }}</code></pre>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        Prism.highlightAll();
+    });
+</script>
+<h2>Rendu du code</h2>
+<div class="terminal"><pre>{{ .FinalResultCode }}</pre></div>
 </body>
 </html>
 {{end}}
