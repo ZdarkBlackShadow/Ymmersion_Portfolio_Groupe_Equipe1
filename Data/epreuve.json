@@ -11,7 +11,8 @@
         "finalResult": "imagefinaleepreuve1.png",
         "finalResultCode": "",
         "timerInMinute" : 20,
-        "when": "Lundi 11H"
+        "when": "Lundi 11H",
+        "learningLesson":[]
     },
     {
         "id":2,
@@ -25,6 +26,7 @@
         "finalResult":"",
         "finalResultCode":"Bienvenue dans le jeu de devinettes !\nJe pense à un nombre entre 1 et 99. Pouvez-vous le devinez ?\n2\nC'est plus grand\n80\nC'est plus petit\n60\nC'est plus grand\n70\nC'est plus grand\n75\nC'est plus petit\n73\nC'est plus petit\n72\nBravo ! Vous avez trouvé le code en 7 tentatives",
         "timerInMinute":20,
-        "when":"Lundi 14H40"
+        "when":"Lundi 14H40",
+        "learningLesson":["Comment demander a l'utilisateur un nombre avec la fonction scanln", "La génration d'un nombre aléatoire entre 1 et 100", "Les boucles avec des conditions d'arret"]
     }
 ]
