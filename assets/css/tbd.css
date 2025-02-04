@@ -1,30 +1,64 @@
-body {
+.rating-buttons {
     display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
+    gap: 10px;
 }
 
-.epreuve1 {
-
+.rating-input {
+    display: none;
 }
 
-.epreuve2 {
-
+.rating-button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.epreuve3 {
-
+/* Couleurs des boutons */
+.rating-button[data-value="1"] {
+    background-color: #ff0000;
+}
+.rating-button[data-value="2"] {
+    background-color: #ff4d4d;
+}
+.rating-button[data-value="3"] {
+    background-color: #ff9900;
+}
+.rating-button[data-value="4"] {
+    background-color: #99cc00;
+}
+.rating-button[data-value="5"] {
+    background-color: #4CAF50;
 }
 
-.epreuve4 {
-
+.rating-button:hover {
+    opacity: 0.8;
 }
 
-.epreuve5 {
-
+.rating-input:not(:checked) + .rating-button {
+    background-color: #d3d3d3;
+    color: #a9a9a9;
+    cursor: not-allowed;
 }
 
-.epreuve6 {
+.rating-input:checked + .rating-button {
+    color: white;
+    border-color: #000;
+}
 
+.rating-input:checked[data-value="1"] + .rating-button {
+    background-color: #ff0000;
+}
+.rating-input:checked[data-value="2"] + .rating-button {
+    background-color: #ff4d4d;
+}
+.rating-input:checked[data-value="3"] + .rating-button {
+    background-color: #ff9900;
+}
+.rating-input:checked[data-value="4"] + .rating-button {
+    background-color: #99cc00;
+}
+.rating-input:checked[data-value="5"] + .rating-button {
+    background-color: #4CAF50;
 }
