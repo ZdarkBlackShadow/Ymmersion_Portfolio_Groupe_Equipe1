@@ -8,9 +8,14 @@ import (
 )
 
 var Templates *template.Template
+var ALLEpreuve []Exercice
 
 func InitServer() {
 	var err error
+	ALLEpreuve, err = GetAllEpreuveData()
+	if err != nil {
+		log.Fatal(err)
+	}
 	Templates, err = template.New("").ParseGlob("templates/*.html")
 	if err != nil {
 		log.Fatalf("Error parsing templates: %v", err)
