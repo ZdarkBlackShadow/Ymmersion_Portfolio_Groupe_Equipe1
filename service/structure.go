@@ -51,10 +51,3 @@ type DataTDB struct {
 	Datatdb string
 }
 
-type TestExercice struct {
-	Exercice Exercice
-	Guess int 
-	Answer string
-	Result bool
-	OnGoing bool
-}
