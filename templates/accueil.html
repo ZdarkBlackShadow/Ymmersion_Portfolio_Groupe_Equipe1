@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to our portfolio</title>
     <link rel="stylesheet" href="/assets/accueil.css">
+    <script>
+        function redirectToPage(member) {
+            windows.location.href = memberPage;
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -17,33 +22,34 @@
     <main>
         <section id="presentation">
             <div class="team-member">
-                <img src="/assets/image/kellyan.jpg" alt="member1" class="team-member-img">
-                <h3>Nom member1</h3>
+                <img src="/assets/image/kellyan.jpg" alt="member1" class="team-member-img" onclick="redirectToPage('member.html')">
+                <h3>Icardi Kellyan</h3>
                 <p>Rôle : développeurs Frontend</p>
             </div>
             <div class="team-member">
-                <img src="/assets/image/Alexis.jpg" alt="member2" class="team-member-img">
+                <img src="/assets/image/Alexis.jpg" alt="member2" class="team-member-img" onclick="redirectToPage('member.htm')">
                 <h3>Nom member2</h3>
                 <p>Rôle : développeurs Frontend</p>
+
             </div>
             <div class="team-member">
-                <img src="/assets/image/Adrien.jpg" alt="member3" class="team-member-img">
+                <img src="/assets/image/Adrien.jpg" alt="member3" class="team-member-img" onclick="redirectToPage('member.htm')">
                 <h3>Nom member3</h3>
                 <p>Rôle : développeurs Backen</p>
             </div>
             <div class="team-member">
-                <img src="/assets/image/Alexandre.webp" alt="member4" class="team-member-img">
+                <img src="/assets/image/Alexandre.webp" alt="member4" class="team-member-img" onclick="redirectToPage('member.htm')">
                 <h3>Nom member4</h3>
                 <p>Rôle : développeurs Frontend</p>
             </div>
             <div class="team-member">
-                <img src="/assets/image/Yoan.jpg" alt="member5" class="team-member-img">
+                <img src="/assets/image/Yoan.jpg" alt="member5" class="team-member-img" onclick="redirectToPage('member.htm')">
                 <h3>Nom member5</h3>
                 <p>Rôle : développeurs Frontend</p>
             </div>
             <div class="team-member">
-                <img src="/assets/image/Jonathan.jpg" alt="member6" class="team-member-img">
-                <h3>Nom member6</h3>
+                <img src="/assets/image/Jonathan.jpg" alt="member6" class="team-member-img" onclick="redirectToPage('member.htm')">
+                <h3>Perez Jonathan</h3>
                 <p>Rôle : développeurs Frontend</p>
             </div>
         </section>
