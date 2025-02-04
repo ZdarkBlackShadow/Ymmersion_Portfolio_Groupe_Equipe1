@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 main {
@@ -10,6 +11,126 @@ main {
     flex-direction: row;
     justify-content: center;
     margin-top: 10%;
-    width: 100vw;
     gap: 10%;
+}
+
+
+.epreuve1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    border: outset 2px #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px black;
+}
+
+.infoEpreuve {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 5%;
+}
+
+.infoEpreuve > img {
+    width: 20%;
+    border-radius: 10px;
+}
+
+.dataEpreuve {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.dataEpreuve > h2 {
+    margin-bottom: 5%;
+    font-size: 1.9em;
+}
+
+.langage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    width: 20%;
+}
+
+#html {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:
+    0 0 4px #fff,
+    inset 0 0 4px #fff,
+    0 0 6px #f71313,
+    inset 0 0 6px #f71313,
+    0 0 8px #f71313,
+    inset 0 0 8px #f71313;
+    text-align: center;
+}
+
+#css {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:
+    0 0 4px #fff,
+    inset 0 0 4px #fff,
+    0 0 6px #1390f7,
+    inset 0 0 6px #1390f7,
+    0 0 8px #1390f7,
+    inset 0 0 8px #1390f7;
+    text-align: center;
+}
+
+#consigne {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-top: 3%;
+    font-size: 1.5em;
+}
+
+.midle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.midle > span {
+    width: 45%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.midle > p {
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.userEpreuve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoUser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #fff solid 2px;
+}
+
+.infoUser > img {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.dataUser {
+    display: flex;
+    flex-direction: column;
 }

@@ -1,11 +1,11 @@
-
+{{define "home"}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to our portfolio</title>
-    <link rel="stylesheet" href="/assets/css/accueil.css">
+    <link rel="stylesheet" href="/static/css/accueil.css">
     <link rel="stylesheet" href="https://cdnsjs.cloudflare.com/ajax/libs/Font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -20,33 +20,33 @@
     <main>
         <section id="presentation">
             <div class="team-member">
-                <img src="/assets/image/kellyan.jpg" alt="Kellyan" class="team-member-img" onclick="redirectToPage('Kellyan.html')">
+                <img src="/static/image/kellyan.jpg" alt="Kellyan" class="team-member-img" onclick="redirectToPage('Kellyan.html')">
                 <h3>Kellyan Icardi</h3>
                 <p>Rôle : développeurs Frontend</p>
             </div>
             <div class="team-member">
-                <img src="/assets/image/Alexis.jpg" alt="Alexis" class="team-member-img" onclick="redirectToPage('Alexis.htm')">
+                <img src="/static/image/Alexis.jpg" alt="Alexis" class="team-member-img" onclick="redirectToPage('Alexis.htm')">
                 <h3>Alexis Dupin</h3>
                 <p>Rôle : développeurs FullStack</p>
 
             </div>
             <div class="team-member">
-                <img src="/assets/image/Adrien.jpg" alt="Adrien" class="team-member-img" onclick="redirectToPage('Adrien.htm')">
+                <img src="/static/image/Adrien.jpg" alt="Adrien" class="team-member-img" onclick="redirectToPage('Adrien.htm')">
                 <h3>Adrien Lecomte</h3>
                 <p>Rôle : développeurs FullStack</p>
             </div>
             <div class="team-member">
-                <img src="/assets/image/Alexandre.webp" alt="Alexandre" class="team-member-img" onclick="redirectToPage('Alexandre.htm')">
+                <img src="/static/image/Alexandre.webp" alt="Alexandre" class="team-member-img" onclick="redirectToPage('Alexandre.htm')">
                 <h3>Alexandre Petitfrere</h3>
                 <p>Rôle : développeurs FullStack</p>
             </div>
             <div class="team-member">
-                <img src="/assets/image/Yoan.jpg" alt="Yoan" class="team-member-img" onclick="redirectToPage('Yoan.htm')">
+                <img src="/static/image/Yoan.jpg" alt="Yoan" class="team-member-img" onclick="redirectToPage('Yoan.htm')">
                 <h3>Yoan Commeau</h3>
                 <p>Rôle : développeurs Frontend</p>
             </div>
             <div class="team-member">
-                <img src="/assets/image/Jonathan.jpg" alt="member6" class="team-member-img" onclick="redirectToPage('Jonathan.htm')">
+                <img src="/static/image/Jonathan.jpg" alt="member6" class="team-member-img" onclick="redirectToPage('Jonathan.htm')">
                 <h3>Perez Jonathan</h3>
                 <p>Rôle : développeurs Frontend</p>
             </div>
@@ -79,6 +79,7 @@
             </p>
         </div>
     </footer>
-    <script src="/assets/js/accueil.js"></script>
+    <script src="/static/js/accueil.js"></script>
 </body>
 </html>
+{{end}}
