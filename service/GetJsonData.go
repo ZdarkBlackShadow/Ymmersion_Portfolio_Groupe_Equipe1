@@ -25,3 +25,20 @@ func GetAllEpreuveData() ([]Exercice, error) {
 
 	return exercices, nil
 }
+
+func loadEvents() (WeekSchedule, error) {
+	file, err := os.Open("./data/events.json")
+	if err != nil {
+		return WeekSchedule{}, err
+	}
+	defer file.Close()
+
+	var schedule WeekSchedule
+	decoder := json.NewDecoder(file)
+	err = decoder.Decode(&schedule)
+	if err != nil {
+		return WeekSchedule{}, err
+	}
+
+	return schedule, nil
+}
