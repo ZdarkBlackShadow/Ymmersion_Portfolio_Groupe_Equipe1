@@ -1,30 +1,32 @@
-{{define "Adrien"}}
+{{define "Alexandre"}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epreuve Adrien</title>
+    <title>Epreuve ALex</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-go.min.js"></script>
     <link rel="stylesheet" href="/static/css/adrien.css">
 </head>
 <body>
-    <h1>Epreuve 2</h1>
+    <h1>Epreuve 1</h1>
     <h2>Consigne</h2>
-    <p class="consigne">{{.Description}}</p>
-    <h2>Exemple de rendu</h2>
-    <div class="terminal"><pre>{{ .ExempleRenduCode }}</pre></div>
+    <p>{{.Description}}</p>
+    <img src="/static/image/{{.Image}}" alt="Image de la consigne">
     <h2>Code</h2>
-<pre><code class="language-go">{{ .CodeGo }}</code></pre>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        Prism.highlightAll();
-    });
-</script>
-<h2>Rendu du code</h2>
-<div class="terminal"><pre>{{ .FinalResultCode }}</pre></div>
+    <h3>Code html</h3>
+    <pre><code class="language-html">{{ .CodeHTML }}</code></pre>
+    <h3>Code css</h3>
+    <pre><code class="language-css">{{ .CodeCSS }}</code></pre>
+    <h2>Image final</h2>
+    <img src="/static/image/{{.FinalImage}}" alt="Image finale">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            Prism.highlightAll();
+        });
+    </script>
 </body>
 </html>
 {{end}}

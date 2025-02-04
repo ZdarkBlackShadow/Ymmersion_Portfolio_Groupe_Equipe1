@@ -12,6 +12,7 @@ var ALLEpreuve []Exercice
 
 func InitServer() {
 	var err error
+	//recuperer toutes les épreuves
 	ALLEpreuve, err = GetAllEpreuveData()
 	if err != nil {
 		log.Fatal(err)
@@ -23,8 +24,8 @@ func InitServer() {
 	http.HandleFunc("/exemple", Exemple)
 	http.HandleFunc("/tableaudebord", Tableaudebord)
 	http.HandleFunc("/adrien", EpreuveAdrien)
-	http.HandleFunc("/tableau_epreuve", PageEpreuve)
 	http.HandleFunc("/alexandre", EpreuveAlexandre)
+	http.HandleFunc("/calendar", calendarHandler)
 	fileserver := http.FileServer(http.Dir("./assets"))
 	http.Handle("/static/", http.StripPrefix("/static/", fileserver))
 	//Initialisation du serveur

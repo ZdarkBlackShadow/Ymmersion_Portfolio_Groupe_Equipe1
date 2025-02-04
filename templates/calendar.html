@@ -1,0 +1,71 @@
+{{define "calendar"}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier des événements</title>
+    <link rel="stylesheet" href="/static/css/calendar.css">
+</head>
+<body>    
+    <h1>Calendrier de la semaine</h1>
+    <div class="calendar">
+        <div class="day" id="lundi">
+            <h2>Lundi</h2>
+            {{range .Lundi}}
+            <div class="event">
+                <p><strong>{{.Heure}}:</strong> {{.Titre}}</p>
+                <p>{{.Description}}</p>
+            </div>
+            {{else}}
+            <p>Aucun événement</p>
+            {{end}}
+        </div>
+        <div class="day" id="mardi">
+            <h2>Mardi</h2>
+            {{range .Mardi}}
+            <div class="event">
+                <p><strong>{{.Heure}}:</strong> {{.Titre}}</p>
+                <p>{{.Description}}</p>
+            </div>
+            {{else}}
+            <p>Aucun événement</p>
+            {{end}}
+        </div>
+        <div class="day" id="mercredi">
+            <h2>Mercredi</h2>
+            {{range .Mercredi}}
+            <div class="event">
+                <p><strong>{{.Heure}}:</strong> {{.Titre}}</p>
+                <p>{{.Description}}</p>
+            </div>
+            {{else}}
+            <p>Aucun événement</p>
+            {{end}}
+        </div>
+        <div class="day" id="jeudi">
+            <h2>Jeudi</h2>
+            {{range .Jeudi}}
+            <div class="event">
+                <p><strong>{{.Heure}}:</strong> {{.Titre}}</p>
+                <p>{{.Description}}</p>
+            </div>
+            {{else}}
+            <p>Aucun événement</p>
+            {{end}}
+        </div>
+        <div class="day" id="vendredi">
+            <h2>Vendredi</h2>
+            {{range .Vendredi}}
+            <div class="event">
+                <p><strong>{{.Heure}}:</strong> {{.Titre}}</p>
+                <p>{{.Description}}</p>
+            </div>
+            {{else}}
+            <p>Aucun événement</p>
+            {{end}}
+        </div>
+    </div>
+</body>
+</html>
+{{end}}
