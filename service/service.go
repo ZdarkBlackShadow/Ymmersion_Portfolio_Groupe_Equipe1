@@ -18,6 +18,8 @@ func InitServer() {
 	http.HandleFunc("/exemple", Exemple)
 	http.HandleFunc("/tableaudebord", Tableaudebord)
 	http.HandleFunc("/adrien", EpreuveAdrien)
+	http.HandleFunc("/tableau_epreuve", PageEpreuve)
+	http.HandleFunc("/alexandre", EpreuveAlexandre)
 	fileserver := http.FileServer(http.Dir("./assets"))
 	http.Handle("/static/", http.StripPrefix("/static/", fileserver))
 	//Initialisation du serveur

@@ -1,8 +1,12 @@
 body {
-    display: flex;
-    justify-content: center;
     min-height: 100vh;
     text-align: center;
+    background-color: rgb(67, 67, 67);
+}
+
+h2 {
+    text-align: left;
+    margin-left: 30px;
 }
 
 pre {
@@ -14,8 +18,24 @@ pre {
     line-height: 1.5; /* Augmente légèrement l'espace entre les lignes */
     font-family: "Fira Code", monospace;
 }
-.token.operator { 
-    color: #ff79c6;
-    font-weight: bold;
-    background: none;
+
+.consigne {
+    text-align: center;
+    background-color: aqua;
+    color: brown;
+    text-decoration: none;
+    border-radius: 20%;
+
+}
+
+.terminal {
+    background: #000;
+    color: #00ff00;
+    font-family: "Courier New", Courier, monospace;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 20px;
 }
