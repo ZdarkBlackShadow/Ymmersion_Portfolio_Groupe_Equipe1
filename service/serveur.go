@@ -33,5 +33,8 @@ func InitServer() {
 	http.Handle("/static/", http.StripPrefix("/static/", fileserver))
 	//Initialisation du serveur
 	fmt.Println("http://localhost:8080/home")
-	http.ListenAndServe("localhost:8080", nil)
+	err = http.ListenAndServe("localhost:8080", nil)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
