@@ -11,7 +11,7 @@ body {
 /* Fenêtre principale */
 .window {
     width: 600px;
-    height: 140px;
+    height: 125px;
     border: 2px solid #000000;
     border-width: 2px;
     background-color: #fff;
@@ -50,7 +50,7 @@ body {
     display: none;
     padding: 20px;
     background-color: #c7f8ca;
-    height: calc(100% - 10px); /* Ajuste la hauteur du contenu */
+    height: calc(100% - 50px); /* Ajuste la hauteur du contenu */
     overflow-y: auto;
 }
 
