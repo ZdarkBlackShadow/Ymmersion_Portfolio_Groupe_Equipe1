@@ -1,0 +1,79 @@
+{{define "Alexandre"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epreuve ALex</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-go.min.js"></script>
+    <link rel="stylesheet" href="/static/css/EpreuveAlexandre.css">
+    <link rel="stylesheet" href="/static/css/Header.css">
+</head>
+<body>
+    <header>
+        <a href="" menu="menu"><h1>Ymmersion 2</h1></a>
+        <a href="/tableaudebord" class="lienHeader">Tableau de bord</a>
+        <a href="/calendar" class="lienHeader">Calendrier</a>
+        
+    </header>
+    <main>
+        <div class="epreuve1">
+            <div class="infoEpreuve">
+                <img src="/static/image/ImageEpreuve1.png" alt="">
+                <div class="dataEpreuve">
+                    <h2>Icone creeper - Minecraft</h2>
+                    <div class="langage">
+                        <p id="html">HTML</p>
+                        <p id="css">CSS</p>
+                    </div>
+                    <p id="consigne">{{.Description}}</p>
+                </div>
+            </div>
+            <div class="midle">
+                <span></span>
+                <p>Réaliser par :</p>
+                <span></span>
+            </div>
+            <div class="userEpreuve">
+                <div class="infoUser">
+                    <img src="/static/image/Alexandre.webp" alt="" id="profilUser">
+                    <div class="dataUser">
+                        <h2>Alexandre</h2>
+                        <p>Bachelore 1 - Informatique</p>
+                        <p>Develloppeur FullStak</p>
+                    </div>
+                </div>
+                <h2>Réalisation :</h2>
+                <div class="result">
+                    <img src="/static/image/{{.FinalImage}}" alt="" class="FinalResult">
+                    <pre><code class="language-html">{{.CodeHTML}}</code></pre>
+                    <pre><code class="language-css">{{.CodeCSS}}</code></pre>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <h1>Epreuve 1</h1>
+    <h2>Consigne</h2>
+    <p>{{.Description}}</p>
+    <img src="/static/image/{{.Image}}" alt="Image de la consigne">
+    <h2>Code</h2>
+    <h3>Code html</h3>
+    <pre><code class="language-html">{{ .CodeHTML }}</code></pre>
+    <h3>Code css</h3>
+    <pre><code class="language-css">{{ .CodeCSS }}</code></pre>
+    <h2>Image final</h2>
+    <img src="/static/image/{{.FinalImage}}" alt="Image finale">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            Prism.highlightAll();
+        });
+    </script>
+</body>
+</html>
+{{end}}

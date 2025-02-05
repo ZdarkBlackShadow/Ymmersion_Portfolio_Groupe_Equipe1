@@ -1,5 +1,12 @@
+body {
+    min-height: 100vh;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+}
+
+
 .rating-buttons {
-    display: flex;
+    display: center;
     gap: 10px;
 }
 
@@ -15,23 +22,6 @@
     transition: background-color 0.3s ease;
 }
 
-/* Couleurs des boutons */
-.rating-button[data-value="1"] {
-    background-color: #ff0000;
-}
-.rating-button[data-value="2"] {
-    background-color: #ff4d4d;
-}
-.rating-button[data-value="3"] {
-    background-color: #ff9900;
-}
-.rating-button[data-value="4"] {
-    background-color: #99cc00;
-}
-.rating-button[data-value="5"] {
-    background-color: #4CAF50;
-}
-
 .rating-button:hover {
     opacity: 0.8;
 }
@@ -39,7 +29,6 @@
 .rating-input:not(:checked) + .rating-button {
     background-color: #d3d3d3;
     color: #a9a9a9;
-    cursor: not-allowed;
 }
 
 .rating-input:checked + .rating-button {
@@ -51,14 +40,58 @@
     background-color: #ff0000;
 }
 .rating-input:checked[data-value="2"] + .rating-button {
-    background-color: #ff4d4d;
-}
-.rating-input:checked[data-value="3"] + .rating-button {
     background-color: #ff9900;
 }
+.rating-input:checked[data-value="3"] + .rating-button {
+    background-color: #4CAF50;
+}
+
 .rating-input:checked[data-value="4"] + .rating-button {
-    background-color: #99cc00;
+    background-color: #ff0000;
 }
 .rating-input:checked[data-value="5"] + .rating-button {
+    background-color: #ff9900;
+}
+.rating-input:checked[data-value="6"] + .rating-button {
+    background-color: #4CAF50;
+}
+
+.rating-input:checked[data-value="7"] + .rating-button {
+    background-color: #ff0000;
+}
+.rating-input:checked[data-value="8"] + .rating-button {
+    background-color: #ff9900;
+}
+.rating-input:checked[data-value="9"] + .rating-button {
+    background-color: #4CAF50;
+}
+
+.rating-input:checked[data-value="10"] + .rating-button {
+    background-color: #ff0000;
+}
+.rating-input:checked[data-value="11"] + .rating-button {
+    background-color: #ff9900;
+}
+.rating-input:checked[data-value="12"] + .rating-button {
+    background-color: #4CAF50;
+}
+
+.rating-input:checked[data-value="13"] + .rating-button {
+    background-color: #ff0000;
+}
+.rating-input:checked[data-value="14"] + .rating-button {
+    background-color: #ff9900;
+}
+.rating-input:checked[data-value="15"] + .rating-button {
+    background-color: #4CAF50;
+}
+
+.rating-input:checked[data-value="16"] + .rating-button {
+    background-color: #ff0000;
+}
+.rating-input:checked[data-value="17"] + .rating-button {
+    background-color: #ff9900;
+}
+.rating-input:checked[data-value="18"] + .rating-button {
     background-color: #4CAF50;
 }

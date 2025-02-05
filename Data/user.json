@@ -5,36 +5,42 @@
             "name": "Adrien",
             "description": "Etudiant en cybersécurité a Ynov",
             "id": 1,
+            "img": "/static/image/Adrien.jpg",
             "roleDescription": "S'occupe du backend avec les ficher json et au décodage des fichers"
         },
         {
             "name":"Jonathan",
             "description":"test2",
             "id" : 2,
+            "img": "/static/image/Jonathan.jpg",
             "roleDescription": ""
         },
         {
             "name":"Alexandre",
             "description":"test3",
             "id":3,
+            "img": "/static/image/Alexandre.webp",
             "roleDescription":""
         },
         {
             "name":"Kellyan",
             "description":"test",
             "id":4,
+            "img": "/static/image/Kellyan.jpg",
             "roleDescription":""
         },
         {
             "name":"Yoan",
             "description":"",
             "id":5,
+            "img": "/static/image/Yoan.jpg",
             "roleDescription":""
         },
         {
             "name":"Alexis",
             "description":"",
             "id":6,
+            "img": "/static/image/Alexis.jpg",
             "roleDescription":""
         }
     ]

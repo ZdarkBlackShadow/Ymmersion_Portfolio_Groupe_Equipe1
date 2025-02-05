@@ -1,54 +1,52 @@
-
+{{define "home"}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to our portfolio</title>
-    <link rel="stylesheet" href="/assets/css/accueil.css">
-    <script>
-        function redirectToPage(member) {
-            windows.location.href = memberPage;
-        }
-    </script>
+    <link rel="stylesheet" href="/static/css/accueil.css">
+    <link rel="stylesheet" href="https://cdnsjs.cloudflare.com/ajax/libs/Font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div>
-            <h1>Portfolio</h1>
-            <p>image de l'équipe et épreuve</p>
+            <div class="animated-section">
+                <h1>Portfolio</h1>
+                <p>image de l'équipe et épreuve</p>
+            </div>
         </div>
     </header>
     <main>
         <section id="presentation">
             <div class="team-member">
-                <img src="/assets/image/kellyan.jpg" alt="member1" class="team-member-img" onclick="redirectToPage('Kellyan.html')">
-                <h3>Icardi Kellyan</h3>
+                <img src="/static/image/kellyan.jpg" alt="Kellyan" class="team-member-img" onclick="redirectToPage('Kellyan.html')">
+                <h3>Kellyan Icardi</h3>
                 <p>Rôle : développeurs Frontend</p>
             </div>
             <div class="team-member">
-                <img src="/assets/image/Alexis.jpg" alt="member2" class="team-member-img" onclick="redirectToPage('Alexis.htm')">
+                <img src="/static/image/Alexis.jpg" alt="Alexis" class="team-member-img" onclick="redirectToPage('Alexis.htm')">
                 <h3>Alexis Dupin</h3>
-                <p>Rôle : développeurs Frontend</p>
+                <p>Rôle : développeurs FullStack</p>
 
             </div>
             <div class="team-member">
-                <img src="/assets/image/Adrien.jpg" alt="member3" class="team-member-img" onclick="redirectToPage('Adrien.htm')">
+                <img src="/static/image/Adrien.jpg" alt="Adrien" class="team-member-img" onclick="redirectToPage('Adrien.htm')">
                 <h3>Adrien Lecomte</h3>
-                <p>Rôle : développeurs Backen</p>
+                <p>Rôle : développeurs FullStack</p>
             </div>
             <div class="team-member">
-                <img src="/assets/image/Alexandre.webp" alt="member4" class="team-member-img" onclick="redirectToPage('Alexandre.htm')">
+                <img src="/static/image/Alexandre.webp" alt="Alexandre" class="team-member-img" onclick="redirectToPage('Alexandre.htm')">
                 <h3>Alexandre Petitfrere</h3>
-                <p>Rôle : développeurs Frontend</p>
+                <p>Rôle : développeurs FullStack</p>
             </div>
             <div class="team-member">
-                <img src="/assets/image/Yoan.jpg" alt="member5" class="team-member-img" onclick="redirectToPage('Yoan.htm')">
+                <img src="/static/image/Yoan.jpg" alt="Yoan" class="team-member-img" onclick="redirectToPage('Yoan.htm')">
                 <h3>Yoan Commeau</h3>
                 <p>Rôle : développeurs Frontend</p>
             </div>
             <div class="team-member">
-                <img src="/assets/image/Jonathan.jpg" alt="member6" class="team-member-img" onclick="redirectToPage('Jonathan.htm')">
+                <img src="/static/image/Jonathan.jpg" alt="member6" class="team-member-img" onclick="redirectToPage('Jonathan.htm')">
                 <h3>Perez Jonathan</h3>
                 <p>Rôle : développeurs Frontend</p>
             </div>
@@ -58,12 +56,12 @@
                 <h2>Épreuve</h2>
                 <nav>
                     <ul>
-                        <li><a href="epreuve1.html"></a></li>
-                        <li><a href="epreuve2.html"></a></li>
-                        <li><a href="epreuveAdrien.html"></a></li>
-                        <li><a href="epreuve4.html"></a></li>
-                        <li><a href="epreuve5.html"></a></li>
-                        <li><a href="epreuve6.html"></a></li>
+                        <li><a href="/alexis"></a></li>
+                        <li><a href="/alexis"></a></li>
+                        <li><a href="/adrien"></a></li>
+                        <li><a href="/alexandre"></a></li>
+                        <li><a href="/yoan"></a></li>
+                        <li><a href="/jonathan"></a></li>
                     </ul>
                 </nav>
             </div>
@@ -72,14 +70,16 @@
     <footer>
         <div class="container">
             <p>&copy; Équipe du projet
-                - Adrien Lecomte  :  [Github](https://github.com/ZdarkBlackShadow)
-                - Alexandre Petitfrere  :  [Github](https://github.com/Mirkium)
-                - Jonathan Perez  :  [Github](https://github.com/Jonathan-p-z)
-                - Yoan Commeau  :  [Github](https://github.com/Urgalute)
-                - Alexis Dupin  :  [Github](https://github.com/Linijarae)
-                - Kellyan Icardi  :  [github](https://github.com/StorkX13)
+                <a href="https://github.com/ZdarkBlackShadow" class="lienGithub">- Adrien Lecomte  :  [Github]</a>
+                <a href="https://github.com/Mirkium" class="lienGithub">Alexandre Petitfrere  :  [Github]</a>
+                <a href="https://github.com/Jonathan-p-z" class="lienGithub">- Jonathan Perez  :  [Github]</a>
+                <a href="https://github.com/Jonathan-p-z" class="lienGithub">Yoan Commeau  :  [Github]</a>
+                <a href="https://github.com/Linijarae" class="lienGithub">- Alexis Dupin  :  [Github]</a>
+                <a href="https://github.com/StorkX13" class="lienGithub">- Kellyan Icardi  :  [github]</a>
             </p>
         </div>
     </footer>
+    <script src="/static/js/accueil.js"></script>
 </body>
 </html>
+{{end}}
