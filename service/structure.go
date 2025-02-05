@@ -2,10 +2,14 @@ package service
 
 //Structures pour les membres du groupe
 type User struct {
-	Name            string `json:"name"`
-	Description     string `json:"description"`
-	Id              int    `json:"id"`
-	RoleDescription string `json:"roleDescription"`
+	Name               string `json:"name"`
+	Description        string `json:"description"`
+	Id                 int    `json:"id"`
+	Img                string `json:"img"`
+	RoleDescription    string `json:"roleDescription"`
+	EpreuveName        string `json:"epreuveName"`
+	DescriptionEpreuve string `json:"descriptionEpreuve"`
+	Epreuve            string `json:"epreuve"`
 }
 type UserStruct struct {
 	List []string `json:"list"`

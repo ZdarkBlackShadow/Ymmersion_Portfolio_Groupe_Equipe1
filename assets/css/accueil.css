@@ -63,13 +63,18 @@ header h1 {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
 .team-member {
+    text-decoration: none;
     background: rgba(50, 50, 50, 0.7);
     padding: 20px;
+    min-height: 200px;
+    max-height: 500px;
+    min-width: 300px;
+    max-width: 370px;
     border-radius: 10px;
     box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -96,6 +101,15 @@ header h1 {
 .team-member:hover .team-member-img {
     border-color: #F5F5F5;
     transform: scale(1.1);
+}
+
+.team-member h4 {
+    text-decoration: none;
+    color: yellow;
+}
+
+.team-member a {
+    text-decoration: none;
 }
 
 .team-member h3 {
