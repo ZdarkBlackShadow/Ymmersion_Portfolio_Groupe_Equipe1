@@ -47,14 +47,26 @@
                 <p>Réalisation</p>
                 <span></span>
             </div>
-            <div class="result">
-                
-                <img src="/static/image/{{.FinalImage}}" alt="" class="FinalResult">
-                <pre><code class="language-html">{{.CodeHTML}}</code></pre>
-                <pre><code class="language-css">{{.CodeCSS}}</code></pre>
+
+            
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/image/{{.FinalImage}}" alt="" class="FinalResult">
+                    </div>
+                    <div class="carousel-item">
+                        <pre><code class="language-html">{{.CodeHTML}}</code></pre>
+                    </div>
+                    <div class="carousel-item">
+                        <pre><code class="language-css">{{.CodeCSS}}</code></pre>
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
             </div>
         </div>
     </main>
+    <script src="/static/js/EpreuveAlexandre.js"></script>
 </body>
 </html>
 {{end}}

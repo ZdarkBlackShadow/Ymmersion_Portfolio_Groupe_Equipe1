@@ -150,3 +150,38 @@ main {
     
 }
 
+
+.carousel {
+    padding-top: 5%;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    height: 600px;
+    overflow: hidden;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.prev { left: 0; }
+.next { right: 0; }
+
+.language-html, .language-css {
+    overflow-y: scroll;
+    height: 500px;
+}
