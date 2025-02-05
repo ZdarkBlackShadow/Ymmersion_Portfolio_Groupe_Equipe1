@@ -1,6 +1,6 @@
 package service
 
-//Structures pour les menbres du groupe
+//Structures pour les membres du groupe
 type User struct {
 	Name            string `json:"name"`
 	Description     string `json:"description"`
