@@ -5,8 +5,18 @@
 }
 
 body {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #1E1E2E;
+    min-height: 100vh;
+}
+
+.titre {
+    color: #d29209;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .calendar {
