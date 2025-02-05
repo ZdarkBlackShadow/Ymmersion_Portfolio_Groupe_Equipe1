@@ -1,3 +1,3 @@
 function redirectToPage(member) {
-    windows.location.href = memberPage;
+    window.location.href = memberPage;
 }
