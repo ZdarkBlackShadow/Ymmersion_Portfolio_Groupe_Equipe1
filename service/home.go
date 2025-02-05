@@ -6,7 +6,8 @@ import (
 )
 
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
-	ereur := Templates.ExecuteTemplate(w, "home", nil)
+	Data := GetUser()
+	ereur := Templates.ExecuteTemplate(w, "home", Data)
 	if ereur != nil {
 		log.Fatal(ereur)
 	}
