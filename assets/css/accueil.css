@@ -30,20 +30,10 @@ body {
 }
 /*Animation*/
 
-
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header */
-header {
-    background: rgba(40, 40, 40, 0.85);
-    color: #F5F5F5;
-    padding: 40px 0;
-    text-align: center;
-    animation: slideDown 1s ease-in-out;
+    margin: 0px auto;
 }
 
 header h1 {
@@ -67,6 +57,7 @@ header h1 {
     text-align: center;
     font-size: 2em;
     color: #F5F5F5;
+    margin-top: 50px;
 }
 
 
@@ -83,6 +74,7 @@ header h1 {
     box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 100px;
 }
 
 .team-member:hover {
