@@ -1,45 +1,71 @@
-body {
-	font-family: Arial, sans-serif;
-	background-color: #f4f4f4;
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-	text-align: center;
-	margin: 20px 0;
+body {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-color: #1E1E2E;
+    min-height: 100vh;
+}
+
+.titre {
+    color: #d29209;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .calendar {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 jours de la semaine */
+    gap: 20px;
+    padding: 20px;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 .day {
-	width: 15%;
-	background-color: #ffffff;
-	padding: 15px;
-	margin: 10px;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .day h2 {
-	text-align: center;
+    text-align: center;
+    color: #333;
+    background-color: #d29209; /* Couleur unique par jour */
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .event {
-	background-color: #e0f7fa;
-	border-radius: 4px;
-	padding: 10px;
-	margin: 5px 0;
+    background-color: #000000;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.event h3 {
+    color: #333;
+    font-size: 16px;
 }
 
 .event p {
-	margin: 5px 0;
+    color: #777;
+    font-size: 14px;
 }
 
-.event strong {
-	color: #00796b;
+.day:hover {
+    background-color: #f9f9f9; /* Effet de survol */
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
 }

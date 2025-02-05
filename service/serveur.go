@@ -28,9 +28,13 @@ func InitServer() {
 	http.HandleFunc("/alexandre", EpreuveAlexandre)
 	http.HandleFunc("/calendar", calendarHandler)
 	http.HandleFunc("/alexis", EpreuveAlexis)
+	http.HandleFunc("/kellyan", EpreuveKellyan)
 	fileserver := http.FileServer(http.Dir("./assets"))
 	http.Handle("/static/", http.StripPrefix("/static/", fileserver))
 	//Initialisation du serveur
-	fmt.Println("http://localhost:8080/exemple")
-	http.ListenAndServe("localhost:8080", nil)
+	fmt.Println("http://localhost:8080/home")
+	err = http.ListenAndServe("localhost:8080", nil)
+	if err != nil {
+		log.Fatal(err)
+	}
 }

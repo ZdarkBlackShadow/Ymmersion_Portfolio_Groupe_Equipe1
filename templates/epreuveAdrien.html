@@ -9,43 +9,64 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-go.min.js"></script>
     <link rel="stylesheet" href="/static/css/adrien.css">
+    <link rel="icon" href="/static/image/icone.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Devinette des nombres</h1>
+    {{template "header"}}
+    <h1 class="titre">Devinette des nombres (Adrien se branle sur des pieds)</h1>
     <div class="container">
         <div class="column">
             <div class="consigne">
                 <h2>Consigne</h2>
                 <p>{{.Description}}</p>
+                <h2>Détail de l'épreuve</h2>
+                <div class="detail">
+                    <h3>Temps pour réaliser l'epreuve : </h3>
+                    <p>{{.Timer}} min</p>
+                    <h3>Date : </h3>
+                    <p>{{.When}}</p>
+                </div>
             </div>
         </div>
         <div class="column">
             <h2>Exemple de rendu</h2>
             <div class="terminal"><pre>{{ .ExempleRenduCode }}</pre></div>
         </div>
-        <div class="column">
-            <h2>Code</h2>
-            <pre><code class="language-go">{{ .CodeGo }}</code></pre>
-        </div>
+    </div>
+    <div class="code-go">
+        <h2>Code</h2>
+        <pre><code class="language-go">{{ .CodeGo }}</code></pre>
+    </div>
+    <div class="container">
         <div class="column">
             <h2>Rendu du code</h2>
             <div class="terminal"><pre>{{ .FinalResultCode }}</pre></div>
         </div>
         <div class="column">
-            <h2>Detail de l'épreuve</h2>
-            <div class="detail">
-                <h3>Temps de l'épreuve : {{.Timer}} min</h3>
-                <h3>Quand : {{.When}}</h3>
-                <h3>Cométence utilisé</h3>
-                {{range .LearningLesson}}
-                    <p>{{.}}</p>
-                {{end}}
+            <div class="competence-container">
+                <h2>Compétences utilisées</h2>
+                <div class="competences">
+                    {{range .LearningLesson}}
+                        <p>{{.}}</p>
+                    {{end}}
+                </div>
             </div>
         </div>
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             Prism.highlightAll();
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+            const columns = document.querySelectorAll(".column");
+
+            columns.forEach((column, index) => {
+                if (index % 2 === 0) {
+                    column.classList.add("slide-left");
+                } else {
+                    column.classList.add("slide-right");
+                }
+            });
         });
     </script>
 </body>
