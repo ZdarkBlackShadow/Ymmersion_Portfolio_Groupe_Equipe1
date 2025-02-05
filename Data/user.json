@@ -2,46 +2,64 @@
     "list" : ["Adrien", "Jonathan", "Alexandre", "Kellyan", "Yoan", "Alexis"],
     "data":[
         {
-            "name": "Adrien",
-            "description": "Etudiant en cybersécurité a Ynov",
+            "name": "Adrien Lecomte",
+            "description": "Toujours présent pour s'amuser et faire des folie tout en respectant les autres",
             "id": 1,
             "img": "/static/image/Adrien.jpg",
-            "roleDescription": "S'occupe du backend avec les ficher json et au décodage des fichers"
+            "roleDescription": "dévelopeur backend",
+            "epreuveName":"Devinnette d'un nombre",
+            "descriptionEpreuve":"Le programe génére un bombre aléatoire et l'utilisateur doit réussir a le trouver avec le moins de tentatives possibles",
+            "epreuve":"/adrien"
         },
         {
-            "name":"Jonathan",
-            "description":"test2",
+            "name":"Jonathan Perez",
+            "description":"Fait croire qu'il est vieux avec sa barbe mais c'est un 2004",
             "id" : 2,
             "img": "/static/image/Jonathan.jpg",
-            "roleDescription": ""
+            "roleDescription": "dévelopeur frontend",
+            "epreuveName":"Pas encore réalisé",
+            "descriptionEpreuve":"Ceci est une description, Ceci est une description, Ceci est une description, Ceci est une description, Ceci est une description",
+            "epreuve":"/jonathan"
         },
         {
-            "name":"Alexandre",
-            "description":"test3",
+            "name":"Alexandre Petitfrere",
+            "description":"Le pervers originel, son idol est s'appelle tonton H et jamais à l'heure",
             "id":3,
             "img": "/static/image/Alexandre.webp",
-            "roleDescription":""
+            "roleDescription":"dévelopeur frontend",
+            "epreuveName":"Dessiner une tête de creeper",
+            "descriptionEpreuve":"A l'aide des langages html et css, reproduire une groose tête de creeper venant du jeu vidéo minecraft",
+            "epreuve":"/alexandre"
         },
         {
-            "name":"Kellyan",
-            "description":"test",
+            "name":"Kellyan Icardi",
+            "description":"Tout nouveau êléve et il est prêt a tout pour réussir",
             "id":4,
             "img": "/static/image/Kellyan.jpg",
-            "roleDescription":""
+            "roleDescription":"dévelopeur frontend",
+            "epreuveName":"Pas encore réalisé",
+            "descriptionEpreuve":"Ceci est une description, Ceci est une description, Ceci est une description, Ceci est une description, Ceci est une description",
+            "epreuve":"/kellyan"
         },
         {
-            "name":"Yoan",
-            "description":"",
+            "name":"Yoan Commeau",
+            "description":"Regrette la période où il avait ses cheveux",
             "id":5,
             "img": "/static/image/Yoan.jpg",
-            "roleDescription":""
+            "roleDescription":"dévelopeur fullsatck",
+            "epreuveName":"Pas encore réalisé",
+            "descriptionEpreuve":"Ceci est une description, Ceci est une description, Ceci est une description, Ceci est une description, Ceci est une description",
+            "epreuve":"/"
         },
         {
-            "name":"Alexis",
-            "description":"",
+            "name":"Alexis Dupin",
+            "description":"Toujours fatigué avec de grosse cernes",
             "id":6,
             "img": "/static/image/Alexis.jpg",
-            "roleDescription":""
+            "roleDescription":"dévelopeur fullsatck",
+            "epreuveName":"Créer un mot de passe aléatoire",
+            "descriptionEpreuve":"Créer un mot de pase de manière aléatoire avec des chiffres, des lettre minuscules et majuscules et des symbôles",
+            "epreuve":"/alexis"
         }
     ]
 }

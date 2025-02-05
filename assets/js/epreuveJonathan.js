@@ -23,6 +23,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000);
     homeButton.addEventListener("click", function () {
         window.location.href = "templates/accueil.html";
-
     });
 });
