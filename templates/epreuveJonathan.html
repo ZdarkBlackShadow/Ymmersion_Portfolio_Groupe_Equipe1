@@ -1,18 +1,23 @@
+{{define "jonathan"}}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Épreuve du Portfolio</title>
-    <link rel="stylesheet" href="/assets/css/epreuveJonathan.css">
+    <link rel="stylesheet" href="/static/css/epreuveJonathan.css">
 </head>
 <body>
     <div class="background-animation"></div>
 
     <header>
         <h1 class="fade-in">Épreuve du Portfolio</h1>
+            <section>
+                <li><a id="calendar" href="/calendar">calendar</a></li>
+                <li><a id="tableaudebordButton" href="/tableaudebord">tableau de bord</a></li>
+            </section>
         <p class="fade-in delay">Développement réalisé en HTML, CSS et js</p>
-    </header>
+    </header>   
     <main>
         <section class="epreuve fade-in">
             <h2>Titre de l'épreuve</h2>
@@ -21,8 +26,9 @@
     </main>
     
     <section id="homeButton">
-        <a href="/templates/accueil.html">Home</a>
+        <a href="/home">Home</a>
     </section>
-    <script src="/assets/js/epreuveJonathan.js"></script>
+    <script src="/static/js/epreuveJonathan.js"></script>
 </body>
 </html>
+{{end}}
