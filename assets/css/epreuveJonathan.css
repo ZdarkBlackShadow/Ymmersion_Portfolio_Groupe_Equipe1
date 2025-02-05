@@ -29,6 +29,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease, transform 1s ease;
+    margin-top: 100px;
 }
 
 .fade-in.show {
@@ -38,13 +39,6 @@ body {
 
 .delay {
     transition-delay: 0.5s;
-}
-
-header {
-    background: linear-gradient(135deg, #1e1e1e, #333);
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 10px 20px rgba(255, 255, 0, 0.8);
 }
 
 h1 {
@@ -109,46 +103,6 @@ h1:hover {
 }
 
 #homeButton:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-
-#calendarButton{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 12px 20px;
-    font-size: 18px;
-    background: linear-gradient(135deg, #525353, #000000);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-#calendarButton:hover {
-    background: linear-gradient(135deg, #005eff, #00c3ff);
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
-}
-
-#calendarButton {
-    background: linear-gradient(135deg, #1e1e1e, #333);
-    padding: 15px 30px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-
-}
-#calendarButton a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#calendarButton:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
