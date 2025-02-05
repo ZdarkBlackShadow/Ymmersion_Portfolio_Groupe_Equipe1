@@ -23,10 +23,8 @@ func Exemple(w http.ResponseWriter, r *http.Request) {
 }
 
 func Tableaudebord(w http.ResponseWriter, r *http.Request) {
-	Datatdb := DataTDB{
-		Datatdb: "Tableau de bord",
-	}
-	err := Templates.ExecuteTemplate(w, "tableaudebord", Datatdb)
+	Data := GetUser()
+	err := Templates.ExecuteTemplate(w, "tableaudebord", Data)
 	if err != nil {
 		log.Fatal(err)
 	}
