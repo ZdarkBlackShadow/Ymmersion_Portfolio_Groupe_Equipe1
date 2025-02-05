@@ -1,6 +1,7 @@
 {{define "alexis"}}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +13,10 @@
     <link rel="stylesheet" href="/static/css/alexis.css">
     <link rel="icon" href="/static/image/icone.ico" type="image/x-icon">
 </head>
+
 <body>
     {{template "header"}}
-    
+    <h1>EPREUVE 3</h1>
     <!-- Fenêtre avec les onglets -->
     <div class="window">
         <!-- Onglets -->
@@ -40,19 +42,23 @@
             <p>{{.When}}</p>
         </div>
     </div>
-
     <h2>Exemple de rendu</h2>
-    <div class="terminal"><pre>{{ .ExempleRenduCode }}</pre></div>
+    <div class="terminal">
+        <pre>{{ .ExempleRenduCode }}</pre>
+    </div>
     <h2>Code</h2>
     <pre><code class="language-go">{{ .CodeGo }}</code></pre>
     <h2>Rendu du code</h2>
-    <div class="terminal"><pre>{{ .FinalResultCode }}</pre></div>
+    <div class="terminal">
+        <pre>{{ .FinalResultCode }}</pre>
+    </div>
     <h2>Compétences utilisées</h2>
     {{range .LearningLesson}}
-        <p>{{.}}</p>
+    <p>{{.}}</p>
     {{end}}
 
     <script src="/static/js/epreuveAlexis.js"></script>
 </body>
+
 </html>
 {{end}}
