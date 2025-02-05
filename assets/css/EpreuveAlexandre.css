@@ -20,10 +20,9 @@ main {
     flex-direction: column;
     align-items: center;
     background-color: rgb(32, 32, 32);
-    border: solid 2px #fff;
+    border: outset 2px #fff;
     border-radius: 20px;
     box-shadow: 5px 5px 30px black;
-    width: 80%;
 }
 
 .infoEpreuve {
@@ -99,7 +98,7 @@ main {
 }
 
 .midle > span {
-    width: 50%;
+    width: 45%;
     height: 3px;
     background-color: #fff;
 }
@@ -111,42 +110,27 @@ main {
     border: 3px solid #fff;
     text-align: center;
     padding: 15px;
-    z-index: 1;
-    position: static;
 }
 
 .userEpreuve {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
-    padding: 15px;
-    width: 97.5%;
 }
 
-
-
-.socialUser {
+.infoUser {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #fff solid 2px;
 }
 
-.socialUser > a > img {
-    width: 30px;
+.infoUser > img {
+    width: 10%;
     border-radius: 50%;
-    background-color: #fff;
 }
 
-
-#profilUser {
-    width: 15%;
-    border-radius: 50%;
-    border: greenyellow 1px solid;
+.dataUser {
+    display: flex;
+    flex-direction: column;
 }
-
-.result {
-    
-}
-
