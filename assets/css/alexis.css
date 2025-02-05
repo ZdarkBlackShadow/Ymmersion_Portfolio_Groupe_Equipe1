@@ -1,6 +1,79 @@
+
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0c0c0;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Fenêtre principale */
+.window {
+    width: 600px;
+    height: 140px;
+    border: 2px solid #000000;
+    border-width: 2px;
+    background-color: #fff;
+}
+
+/* Conteneur des onglets */
+.tabs {
+    display: flex;
+    background-color: #9efff9;
+    border: 2px solid #000000;
+}
+
+/* Style des onglets */
+.tab {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fd9595;
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #ccc;
+}
+
+.active-tab {
+    background-color: #9cfea2;
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
+    border: 2px solid #184b00;
+}
+
+/* Style du contenu des onglets */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #c7f8ca;
+    height: calc(100% - 10px); /* Ajuste la hauteur du contenu */
+    overflow-y: auto;
+}
+
+.active-content {
+    display: block;
+}
+
+/* Titre des onglets */
+h2 {
+    font-size: 20px;
+    color: #232323;
+}
+
+/* Texte dans les onglets */
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
 .terminal {
     color: white;
-    background: #000;
+    background-color: black;
     font-family: "Courier New", monospace;
     padding: 15px;
     border-radius: 10px;

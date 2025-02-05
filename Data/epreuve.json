@@ -42,6 +42,6 @@
         "finalResultCode":"Entrez la longueur du mot de passe (Entre 8 et 16):\n9\nVotre mot de passe généré est: I0q4l1K5t1o8",
         "timerInMinute":20,
         "when":"Mercredi 10H00",
-        "learningLesson":[]
+        "learningLesson":["J'ai pu faire ressortir de mes souvenirs l'utilisation de la fonction rand(), ainsi que append. Deux fonctions bien utile, mais qui ont donné du fil à retordre à ma mémoire vieillissante ! "]
     }
 ]
