@@ -1,42 +1,217 @@
 {
-    "lundi": [
-      {
-        "heure": "09:00",
-        "titre": "Réunion équipe",
-        "description": "Réunion pour discuter des projets de la semaine."
-      },
-      {
-        "heure": "14:00",
-        "titre": "Démo produit",
-        "description": "Démonstration du produit aux clients."
-      }
-    ],
-    "mardi": [
-      {
-        "heure": "10:00",
-        "titre": "Formation interne",
-        "description": "Formation sur la nouvelle technologie."
-      }
-    ],
-    "mercredi": [
-      {
-        "heure": "12:00",
-        "titre": "Déjeuner d'équipe",
-        "description": "Déjeuner avec toute l'équipe."
-      },
-      {
-        "heure": "16:00",
-        "titre": "Entretien recrutement",
-        "description": "Entretien pour un nouveau développeur."
-      }
-    ],
-    "jeudi": [],
-    "vendredi": [
-      {
-        "heure": "08:00",
-        "titre": "Réunion de suivi",
-        "description": "Réunion pour faire le point sur la semaine."
-      }
-    ]
-  }
-  
+  "lundi": [
+    {
+      "heure": "8:30",
+      "titre": "Commencement du projet Ymmersion S2",
+      "description": "Consigne et formation des équipes."
+    },
+    {
+      "heure": "9:00",
+      "titre": "Commencement du projet Ymmersion S2",
+      "description": "Répartition des rôles et création du dossier Ymmersion."
+    },
+    {
+      "heure":"10:30",
+      "titre": "Pause",
+      "description": "Pause de 20 minutes"
+    },
+    {
+      "heure":"10:50",
+      "titre":"Fin de pause",
+      "description":"Fin de la pause, reprise du projet."
+    },
+    {
+      "heure": "12:30",
+      "titre": "Pause",
+      "description": "Pause déjeuner."
+    },
+    {
+      "heure": "13:30",
+      "titre": "Fin de pause",
+      "description": "Fin de la pause déjeuner, reprise projet Ymmersion."
+    },
+    {
+      "heure":"15:00",
+      "titre":"Pause",
+      "description": "Pause de 20 minutes"
+    },
+    {
+      "heure":"15:20",
+      "titre":"Pause",
+      "description":"Fin de la pause, reprise du projet."
+    },
+    {
+      "heure": "17:00",
+      "titre": "Fin de journée",
+      "description": "Première journée Ymmersion terminée."
+    }
+  ],
+  "mardi": [
+    {
+      "heure": "8:30",
+      "titre": "Commencement du projet Ymmersion S2",
+      "description": "Consigne et formation des équipes."
+    },
+    {
+      "heure":"10:30",
+      "titre": "Pause",
+      "description": "Pause de 20 minutes"
+    },
+    {
+      "heure":"10:50",
+      "titre":"Fin de pause",
+      "description":"Fin de la pause, reprise du projet."
+    },
+    {
+      "heure": "12:30",
+      "titre": "Pause",
+      "description": "Pause déjeuner."
+    },
+    {
+      "heure": "13:30",
+      "titre": "Fin de pause",
+      "description": "Fin de la pause déjeuner, reprise projet Ymmersion."
+    },
+    {
+      "heure":"15:00",
+      "titre":"Pause",
+      "description": "Pause de 20 minutes"
+    },
+    {
+      "heure":"15:20",
+      "titre":"Pause",
+      "description":"Fin de la pause, reprise du projet."
+    },
+    {
+      "heure": "17:00",
+      "titre": "Fin de journée",
+      "description": "Première journée Ymmersion terminée."
+    }
+  ],
+  "mercredi": [
+    {
+      "heure": "8:30",
+      "titre": "Commencement du projet Ymmersion S2",
+      "description": "Consigne et formation des équipes."
+    },
+    {
+      "heure":"10:30",
+      "titre": "Pause",
+      "description": "Pause de 20 minutes"
+    },
+    {
+      "heure":"10:50",
+      "titre":"Fin de pause",
+      "description":"Fin de la pause, reprise du projet."
+    },
+    {
+      "heure": "12:30",
+      "titre": "Pause",
+      "description": "Pause déjeuner."
+    },
+    {
+      "heure": "13:30",
+      "titre": "Fin de pause",
+      "description": "Fin de la pause déjeuner, reprise projet Ymmersion."
+    },
+    {
+      "heure":"15:00",
+      "titre":"Pause",
+      "description": "Pause de 20 minutes"
+    },
+    {
+      "heure":"15:20",
+      "titre":"Pause",
+      "description":"Fin de la pause, reprise du projet."
+    },
+    {
+      "heure": "17:00",
+      "titre": "Fin de journée",
+      "description": "Première journée Ymmersion terminée."
+    }
+  ],
+  "jeudi": [
+    {
+      "heure": "8:30",
+      "titre": "Commencement du projet Ymmersion S2",
+      "description": "Consigne et formation des équipes."
+    },
+    {
+      "heure":"10:30",
+      "titre": "Pause",
+      "description": "Pause de 20 minutes"
+    },
+    {
+      "heure":"10:50",
+      "titre":"Fin de pause",
+      "description":"Fin de la pause, reprise du projet."
+    },
+    {
+      "heure": "12:30",
+      "titre": "Pause",
+      "description": "Pause déjeuner."
+    },
+    {
+      "heure": "13:30",
+      "titre": "Fin de pause",
+      "description": "Fin de la pause déjeuner, reprise projet Ymmersion."
+    },
+    {
+      "heure":"15:00",
+      "titre":"Pause",
+      "description": "Pause de 20 minutes"
+    },
+    {
+      "heure":"15:20",
+      "titre":"Pause",
+      "description":"Fin de la pause, reprise du projet."
+    },
+    {
+      "heure": "17:00",
+      "titre": "Fin de journée",
+      "description": "Première journée Ymmersion terminée."
+    }
+  ],
+  "vendredi": [
+    {
+      "heure": "8:30",
+      "titre": "Commencement du projet Ymmersion S2",
+      "description": "Consigne et formation des équipes."
+    },
+    {
+      "heure":"10:30",
+      "titre": "Pause",
+      "description": "Pause de 20 minutes"
+    },
+    {
+      "heure":"10:50",
+      "titre":"Fin de pause",
+      "description":"Fin de la pause, reprise du projet."
+    },
+    {
+      "heure": "12:30",
+      "titre": "Pause",
+      "description": "Pause déjeuner."
+    },
+    {
+      "heure": "13:30",
+      "titre": "Fin de pause",
+      "description": "Fin de la pause déjeuner, reprise projet Ymmersion."
+    },
+    {
+      "heure":"15:00",
+      "titre":"Pause",
+      "description": "Pause de 20 minutes"
+    },
+    {
+      "heure":"15:20",
+      "titre":"Pause",
+      "description":"Fin de la pause, reprise du projet."
+    },
+    {
+      "heure": "17:00",
+      "titre": "Fin de journée",
+      "description": "Première journée Ymmersion terminée."
+    }
+  ]
+}
