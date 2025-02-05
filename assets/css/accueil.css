@@ -28,6 +28,8 @@ body {
     from { transform: translateY(50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
+/*Animation*/
+
 
 .container {
     width: 90%;
@@ -37,8 +39,8 @@ body {
 
 /* Header */
 header {
-    background: rgba(40, 40, 40, 0.85); /* Moins sombre */
-    color: #F5F5F5; /* Blanc cassé */
+    background: rgba(40, 40, 40, 0.85);
+    color: #F5F5F5;
     padding: 40px 0;
     text-align: center;
     animation: slideDown 1s ease-in-out;
@@ -51,7 +53,7 @@ header h1 {
 /* Section Présentation */
 #presentation {
     padding: 40px 0;
-    background: rgba(40, 40, 40, 0.75); /* Moins opaque */
+    background: rgba(40, 40, 40, 0.75);
     border-radius: 10px;
     margin-top: 20px;
     animation: slideUp 1s ease-in-out;
@@ -67,7 +69,7 @@ header h1 {
     color: #F5F5F5;
 }
 
-/* Grid équipe */
+
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -127,6 +129,7 @@ header h1 {
     text-align: center;
     font-size: 2em;
     color: #F5F5F5;
+    line-height: 3;
 }
 
 nav ul {
@@ -175,4 +178,100 @@ footer p {
 
 .lienGithub:hover {
     color: goldenrod;
+}
+
+/* Amélioration de la section avec animations */
+.animated-section {
+    background: linear-gradient(135deg, #3f4349, #50575f); /* Dégradé moins sombre */
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeInSlide 1.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Effet au survol */
+.animated-section:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Animation d'apparition */
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation de fond subtile */
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.animated-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    animation: backgroundMove 10s infinite alternate ease-in-out;
+}
+
+/* Titre stylisé */
+.animated-section h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    animation: slideUp 1s ease-in-out;
+}
+
+/* Sous-titre */
+.animated-section p {
+    font-size: 1.3em;
+    color: #dcdde1;
+    margin-bottom: 0px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animation pour le titre */
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation fade-in pour le texte */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
