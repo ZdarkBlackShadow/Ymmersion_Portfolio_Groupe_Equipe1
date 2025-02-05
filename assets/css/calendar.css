@@ -29,15 +29,15 @@ body {
 .day h2 {
     text-align: center;
     color: #333;
-    background-color: #6c5ce7; /* Couleur unique par jour */
-    color: white;
+    background-color: #d29209; /* Couleur unique par jour */
+    color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
 .event {
-    background-color: #f0f0f0;
+    background-color: #000000;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
