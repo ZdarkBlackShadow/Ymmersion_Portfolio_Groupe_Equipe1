@@ -33,47 +33,33 @@
             </div>
             <div class="midle">
                 <span></span>
-                <p>Réaliser par :</p>
+                <p>Réaliser</p>
                 <span></span>
             </div>
             <div class="userEpreuve">
-                <div class="infoUser">
-                    <img src="/static/image/Alexandre.webp" alt="" id="profilUser">
-                    <div class="dataUser">
-                        <h2>Alexandre</h2>
-                        <p>Bachelore 1 - Informatique</p>
-                        <p>Develloppeur FullStak</p>
-                    </div>
+                <img src="/static/image/Alexandre.webp" alt="" id="profilUser">
+                <h2>Alexandre</h2>
+                <p>Bachelore 1 - Informatique</p>
+                <p>Develloppeur FullStak</p>
+                
+                <div class="socialUser">
+                    <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"><img src="/static/image/Linkedin.png" alt=""></a>
+                    <a href="https://github.com/Mirkium"><img src="/static/image/Github.png" alt=""></a>
                 </div>
-                <h2>Réalisation :</h2>
-                <div class="result">
-                    <img src="/static/image/{{.FinalImage}}" alt="" class="FinalResult">
-                    <pre><code class="language-html">{{.CodeHTML}}</code></pre>
-                    <pre><code class="language-css">{{.CodeCSS}}</code></pre>
-                </div>
+            </div>
+            <div class="midle">
+                <span></span>
+                <p>Réalisation</p>
+                <span></span>
+            </div>
+            <div class="result">
+                
+                <img src="/static/image/{{.FinalImage}}" alt="" class="FinalResult">
+                <pre><code class="language-html">{{.CodeHTML}}</code></pre>
+                <pre><code class="language-css">{{.CodeCSS}}</code></pre>
             </div>
         </div>
     </main>
-
-
-
-
-    <h1>Epreuve 1</h1>
-    <h2>Consigne</h2>
-    <p>{{.Description}}</p>
-    <img src="/static/image/{{.Image}}" alt="Image de la consigne">
-    <h2>Code</h2>
-    <h3>Code html</h3>
-    <pre><code class="language-html">{{ .CodeHTML }}</code></pre>
-    <h3>Code css</h3>
-    <pre><code class="language-css">{{ .CodeCSS }}</code></pre>
-    <h2>Image final</h2>
-    <img src="/static/image/{{.FinalImage}}" alt="Image finale">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            Prism.highlightAll();
-        });
-    </script>
 </body>
 </html>
 {{end}}
