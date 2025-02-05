@@ -1,0 +1,12 @@
+.terminal {
+    color: white;
+    background: #000;
+    font-family: "Courier New", monospace;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 20px;
+    overflow-x: auto;
+}
