@@ -10,6 +10,14 @@ import (
 var Templates *template.Template
 var ALLEpreuve []Exercice
 
+func seq(start, end int) []int {
+	var seq []int
+	for i := start; i <= end; i++ {
+		seq = append(seq, i)
+	}
+	return seq
+}
+
 func InitServer() {
 	var err error
 	//recuperer toutes les épreuves
@@ -17,7 +25,10 @@ func InitServer() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	Templates, err = template.New("").ParseGlob("templates/*.html")
+	funcMap := template.FuncMap{
+		"seq": seq,
+	}
+	Templates, err = template.New("").Funcs(funcMap).ParseGlob("templates/*.html")
 	if err != nil {
 		log.Fatalf("Error parsing templates: %v", err)
 	}

@@ -1,14 +1,41 @@
 {{define "kellyan"}}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Epreuve Kellyan</title>
-    <link rel="stylesheet" href="/static/css/Header.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-go.min.js"></script>
+    <link rel="stylesheet" href="/static/css/kellyan.css">
 </head>
-<body>
+
+  <body>
     {{template "header"}}
-</body>
+    <h2>Consigne</h2>
+    <p>{{.Description}}</p>
+    <h2>Détail de l'épreuve</h2>
+    <h3>Temps pour réaliser l'epreuve :</h3>
+    <p>{{.Timer}} min</p>
+    <h3>Date :</h3>
+    <p>{{.When}}</p>
+    <h2>Exemple de rendu</h2>
+    <div class="terminal">
+      <pre>{{ .ExempleRenduCode }}</pre>
+    </div>
+    <div class="code-go">
+      <h2>Code</h2>
+      <pre><code class="language-go">{{ .CodeGo }}</code></pre>
+    </div>
+    <h2>Rendu du code</h2>
+    <h2>Compétences utilisées</h2>
+    <div class="terminal">
+      <pre>{{ .FinalResultCode }}</pre>
+    </div>
+    {{range .LearningLesson}}
+    <p>{{.}}</p>
+    {{end}}
+  </body>
 </html>
 {{end}}

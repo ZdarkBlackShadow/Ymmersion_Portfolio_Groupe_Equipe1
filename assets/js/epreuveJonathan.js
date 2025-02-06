@@ -25,3 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "templates/accueil.html";
     });
 });
+
+function showSection(sectionId) {
+    const sections = document.querySelectorAll('.section-content');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    const selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
+}

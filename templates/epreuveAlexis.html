@@ -61,12 +61,12 @@
             <!-- Le mot de passe généré sera affiché ici -->
         </div>
     </div>
-
-    <h2>Compétences utilisées</h2>
-    {{range .LearningLesson}}
-    <p>{{.}}</p>
+    <div class="skills">
+        <h2>Compétences utilisées</h2>
+        {{range .LearningLesson}}
+        <p>{{.}}</p>
+    </div>
     {{end}}
-
     <script src="/static/js/epreuveAlexis.js"></script>
 </body>
 </html>
