@@ -27,6 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    Prism.highlightAll();
+});
+
 function showSection(sectionId) {
     const sections = document.querySelectorAll('.section-content');
     sections.forEach(section => {

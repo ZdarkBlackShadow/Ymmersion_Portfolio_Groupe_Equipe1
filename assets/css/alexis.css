@@ -2,23 +2,23 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url("/static/image/fond.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat:repeat-y;
+    background-size:contain ;
     text-align: center;
     min-height: 100vh;
     margin: 30px;
+
 }
 
 /* Fenêtre principale */
 .window {
     width: 600px;
-    height: 125px;
-    border: 2px solid #000000;
-    border-width: 2px;
-    background-color: #fff;
-    translate: 400px;
-    margin: 50px;
-
+    height: 150px;
+    border-style: double;
+    background-color: #c8c8c8;
+    translate: 428px;
+    margin-bottom: 40px;
+    padding: 5px;
 }
 
 /* Conteneur des onglets */
@@ -34,7 +34,7 @@ body {
     padding: 12px;
     text-align: center;
     cursor: pointer;
-    background-color: #fd9595;
+    background-color: #ffffff;
     transition: background-color 0.3s ease;
 }
 
@@ -43,8 +43,8 @@ body {
 }
 
 .active-tab {
-    background-color: #9cfea2;
-    border-bottom: 2px solid #fff;
+    background-color: #c8c8c8;
+    border-bottom: none;
     font-weight: bold;
     border: 2px solid #184b00;
 }
@@ -53,7 +53,7 @@ body {
 .tab-content {
     display: none;
     padding: 20px;
-    background-color: #c7f8ca;
+    background-color: #7b7b7b;
     height: calc(100% - 50px);
     /* Ajuste la hauteur du contenu */
     overflow-y: auto;
@@ -67,9 +67,12 @@ body {
 h2 {
     font-size: 20px;
     color: #232323;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 h1 {
+    padding-top: 30px;
     color: #232323;
 }
 
@@ -89,11 +92,11 @@ p {
     text-align: left;
     white-space: pre-wrap;
     word-wrap: break-word;
-    margin: 50px;
+    margin: 5px;
     overflow-x: auto;
     width: 500px;
     height: 130px;
-    translate: 430px;
+    translate: 465px;
     border-style: double;
     border-color: white
 }
@@ -115,10 +118,21 @@ p {
     background-color: beige;
     font-weight: 600;
     font-family: "Courier New", monospace;
-    padding: 15px;
     border-radius: 10px;
     text-align: center;
     width: 75%;
     translate: 175px;
     border-style: double;
+    margin-top: 10px;
+}
+
+.test {
+    width: 400px;
+    height: 80px;
+    background-color: #000000;
+    color: #0ed300;
+    border-style: double;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    translate: 520px;
 }
