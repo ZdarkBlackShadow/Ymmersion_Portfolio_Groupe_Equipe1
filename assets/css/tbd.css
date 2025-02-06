@@ -1,13 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     min-height: 100vh;
     text-align: center;
-    background-color: rgb(200, 200, 200);
+    background-color: #1E1E2E;
+    scrollbar-color: #2E2E3E #1E1E2E;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px;
+}
+
+.container {
+    box-shadow: 0 0 10px #d0ff00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #2E2E3E;
+    border-radius: 10px;
+}
+
+.rating {
+    padding: 20px;
+    box-shadow: 0 0 10px #000000;
+}
+
+.rating input, label{
+    margin: 10px;
+}
+
+.rating-header {
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    color: #ffffff;
+}
+
+.titre {
+    margin-top: 30px;
+    color: #84ff00ef;
+    font-size: 30px;
+}
+
+a {
+    color: #e2df09;
+    text-decoration: none;
+}
+
+.advice {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.advice textarea {
+    background-color: #3E3E4E;
+    height: 80px;
+    width: 500px;
+    border: #000000;
+    border-radius: 5px;
+    color: #d7ebbd;
+    padding: 10px;
+    resize: none;
+    overflow: auto;
+    font-size: 15px;
 }
 
 
+.advice textarea::placeholder {
+    font-size: 14px;
+    text-align: center;
+    color: #a9a9a9;
+}
+
+.advice textarea:focus {
+    outline: none;
+}
+
 .rating-buttons {
-    display: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
     gap: 10px;
+    color: #ffffff;
+}
+
+.rating-buttons:focus {
+    outline: none;
 }
 
 .rating-input {
@@ -22,12 +110,29 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.valider {
+    background-color: #47ff22ef;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 50px;
+    width: 120px;
+    place-self: center;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.valider:hover {
+    background-color: #47ff22;
+}
+
 .rating-button:hover {
     opacity: 0.8;
 }
 
 .rating-input:not(:checked) + .rating-button {
-    background-color: #d3d3d3;
+    background-color: #3E3E4E;
     color: #a9a9a9;
 }
 
@@ -36,62 +141,32 @@ body {
     border-color: #000;
 }
 
-.rating-input:checked[data-value="1"] + .rating-button {
-    background-color: #ff0000;
-}
-.rating-input:checked[data-value="2"] + .rating-button {
-    background-color: #ff9900;
-}
-.rating-input:checked[data-value="3"] + .rating-button {
-    background-color: #4CAF50;
+.rating-button.red {
+    background-color: #ff4d4d;
 }
 
-.rating-input:checked[data-value="4"] + .rating-button {
-    background-color: #ff0000;
-}
-.rating-input:checked[data-value="5"] + .rating-button {
-    background-color: #ff9900;
-}
-.rating-input:checked[data-value="6"] + .rating-button {
-    background-color: #4CAF50;
+.rating-button.orange {
+    background-color: #ffb84d;
 }
 
-.rating-input:checked[data-value="7"] + .rating-button {
-    background-color: #ff0000;
+.rating-button.green {
+    background-color: #66cc66;
 }
-.rating-input:checked[data-value="8"] + .rating-button {
-    background-color: #ff9900;
-}
-.rating-input:checked[data-value="9"] + .rating-button {
-    background-color: #4CAF50;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Largeur de la scrollbar */
 }
 
-.rating-input:checked[data-value="10"] + .rating-button {
-    background-color: #ff0000;
-}
-.rating-input:checked[data-value="11"] + .rating-button {
-    background-color: #ff9900;
-}
-.rating-input:checked[data-value="12"] + .rating-button {
-    background-color: #4CAF50;
+::-webkit-scrollbar-track {
+    background: #1E1E2E; /* Couleur de fond de la track */
 }
 
-.rating-input:checked[data-value="13"] + .rating-button {
-    background-color: #ff0000;
-}
-.rating-input:checked[data-value="14"] + .rating-button {
-    background-color: #ff9900;
-}
-.rating-input:checked[data-value="15"] + .rating-button {
-    background-color: #4CAF50;
+::-webkit-scrollbar-thumb {
+    background-color: #2E2E3E; /* Couleur de la thumb */
+    border-radius: 10px; /* Arrondir les coins de la thumb */
+    border: 2px solid #1E1E2E; /* Bordure pour créer un espace entre la thumb et la track */
 }
 
-.rating-input:checked[data-value="16"] + .rating-button {
-    background-color: #ff0000;
-}
-.rating-input:checked[data-value="17"] + .rating-button {
-    background-color: #ff9900;
-}
-.rating-input:checked[data-value="18"] + .rating-button {
-    background-color: #4CAF50;
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3E3E4E; /* Couleur de la thumb au survol */
 }
