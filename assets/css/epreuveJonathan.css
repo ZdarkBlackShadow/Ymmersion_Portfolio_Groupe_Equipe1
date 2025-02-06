@@ -79,17 +79,43 @@ ul li {
     border-radius: 5px;
 }
 
-.code-display {
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.section-content {
     display: none;
+    margin-top: 20px;
+}
+
+.section-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.section-content pre {
     background: #1e1e1e;
     color: #ffffff;
     padding: 20px;
-    margin: 20px 0;
     border-radius: 5px;
     text-align: left;
     white-space: pre-wrap;
-}
-
-.code-display.show {
-    display: block;
 }
