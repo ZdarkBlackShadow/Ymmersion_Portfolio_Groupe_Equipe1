@@ -10,36 +10,37 @@
 </head>
 <body>
     {{template "header"}}
-    <div>
-        <h1>Bienvenue sur le tableau de bord</h1>
-        <div>
+    <div class="container">
+        <h1 class="titre">Bienvenue sur le tableau de bord</h1>
             <div class="rating-buttons">
                 <form action="/rating" method="post">
                     {{range .Data}}
-                    <div>
-                        <h2>═══════════════════════════════════════════════════════════════════════════════════════════════════════════</h2>
-                        <h2>Épreuve {{.Id}}: {{.EpreuveName}}</h2>
-                        <h3>Épreuve réalisée par <a href="{{.Epreuve}}">{{.Name}}</a></h3>
-                        <h3>Notez la performance de {{.Name}} après être allé voir sa page : <br></h3>
-                    </div>
-                    <div>
-                        <input type="radio" id="rating1_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="1">
-                        <label class="rating-button" for="rating1_{{.Id}}">Médiocre</label>
-        
-                        <input type="radio" id="rating2_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="3" checked>
-                        <label class="rating-button" for="rating2_{{.Id}}">Correcte</label>
-        
-                        <input type="radio" id="rating3_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="5">
-                        <label class="rating-button" for="rating3_{{.Id}}">Impressionnante</label>
+                    <div class="rating">
+                        <div class="rating-header">
+                            <h2>Épreuve {{.Id}}: {{.EpreuveName}}</h2>
+                            <h3>Épreuve réalisée par <a href="{{.Epreuve}}">{{.Name}}</a></h3>
+                            <h3>Notez la performance de {{.Name}} après être allé voir sa page : <br></h3>
+                        </div>
+                        <div class="rating-buttons">
+                            <input type="radio" id="rating1_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="1">
+                            <label class="rating-button red" for="rating1_{{.Id}}">Médiocre</label>
+            
+                            <input type="radio" id="rating2_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="3" checked>
+                            <label class="rating-button orange" for="rating2_{{.Id}}">Correcte</label>
+            
+                            <input type="radio" id="rating3_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="5">
+                            <label class="rating-button green" for="rating3_{{.Id}}">Impressionnante</label>
+                        </div>
                     </div>
                     {{end}}
-                    <label for="advice"></label>
-                    <input type="text" name="advice" id="advice" placeholder="Avis général pour les différentes épreuve" required>
-                    <button type="submit">Valider</button>
+                    <div class="advice">
+                        <label for="advice"></label>
+                        <textarea name="advice" id="advice" placeholder="Avis général pour les différentes épreuve" required maxlength="174"></textarea>
+                    </div>
+                    <button type="submit" class="valider">Valider</button>
                 </form>
             </div>
         </div>
-    </div>
 </body>
 </html>
 {{end}}
