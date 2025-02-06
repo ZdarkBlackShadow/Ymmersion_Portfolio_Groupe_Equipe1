@@ -3,7 +3,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 main {
@@ -11,7 +10,7 @@ main {
     flex-direction: row;
     justify-content: center;
     margin-top: 10%;
-    gap: 10%;
+    width: 90%;
 }
 
 
@@ -160,10 +159,13 @@ main {
 .carousel {
     padding-top: 5%;
     position: relative;
-    width: 80%;
-    margin: auto;
+    width: 60%;
+    margin: 3%;
     height: 600px;
     overflow: hidden;
+    border: #fff 2px solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px black;
 }
 .carousel-inner {
     display: flex;
@@ -172,8 +174,12 @@ main {
 .carousel-item {
     min-width: 100%;
     box-sizing: border-box;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .carousel-control {
     position: absolute;
     top: 50%;
@@ -188,6 +194,7 @@ main {
 .next { right: 0; }
 
 .language-html, .language-css {
+    border-radius: 10px;
     overflow-y: scroll;
     height: 500px;
 }
