@@ -24,7 +24,7 @@
       "id": 2,
       "img": "/static/image/Jonathan.jpg",
       "roleDescription": "développeur frontend",
-      "epreuveName": "Pas encore réalisé",
+      "epreuveName": "Pas encore réalisée",
       "descriptionEpreuve": "Ceci est une description, Ceci est une description, Ceci est une description, Ceci est une description, Ceci est une description",
       "epreuve": "/jonathan"
     },
@@ -44,7 +44,7 @@
       "id": 4,
       "img": "/static/image/Kellyan.jpg",
       "roleDescription": "développeur frontend",
-      "epreuveName": "Pas encore réalisé",
+      "epreuveName": "Pas encore réalisée",
       "descriptionEpreuve": "Ceci est une description, Ceci est une description, Ceci est une description, Ceci est une description, Ceci est une description",
       "epreuve": "/kellyan"
     },
@@ -54,7 +54,7 @@
       "id": 5,
       "img": "/static/image/Yoan.jpg",
       "roleDescription": "développeur fullstack",
-      "epreuveName": "Pas encore réalisé",
+      "epreuveName": "Pas encore réalisée",
       "descriptionEpreuve": "Ceci est une description, Ceci est une description, Ceci est une description, Ceci est une description, Ceci est une description",
       "epreuve": "/yoan"
     },
