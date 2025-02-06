@@ -26,14 +26,16 @@
                         <input type="radio" id="rating1_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="1">
                         <label class="rating-button" for="rating1_{{.Id}}">Médiocre</label>
         
-                        <input type="radio" id="rating2_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="2" checked>
+                        <input type="radio" id="rating2_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="3" checked>
                         <label class="rating-button" for="rating2_{{.Id}}">Correcte</label>
         
-                        <input type="radio" id="rating3_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="3">
+                        <input type="radio" id="rating3_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="5">
                         <label class="rating-button" for="rating3_{{.Id}}">Impressionnante</label>
                     </div>
-                    <button type="submit">Valider</button>
                     {{end}}
+                    <label for="advice"></label>
+                    <input type="text" name="advice" id="advice" placeholder="Avis général pour les différentes épreuve" required>
+                    <button type="submit">Valider</button>
                 </form>
             </div>
         </div>

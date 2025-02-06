@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to our portfolio</title>
     <link rel="stylesheet" href="/static/css/accueil.css">
-    <link rel="stylesheet" href="https://cdnsjs.cloudflare.com/ajax/libs/Font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     {{template "header"}}
     <main>
+        <section id="commentaire">
+            <div class="rating" data-average="{{.Average}}">
+                <p>Average Rating: {{printf "%.2f" .Average}}</p>
+            </div>
+            <div class="comments-box">
+                {{range .AllAdvice}}
+                    <div class="comment">
+                        <p>{{.Advice}}</p>
+                    </div>
+                {{end}}
+            </div>
+        </section>
         <section id="presentation">
             {{range .Data}}
                 <div class="team-member">
