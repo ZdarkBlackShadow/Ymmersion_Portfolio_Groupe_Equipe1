@@ -33,7 +33,7 @@ body {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .fade-in.delay-1 {
@@ -138,12 +138,12 @@ button:hover {
     text-align: left;
     white-space: pre-wrap;
     display: inline-block;
-    text-align: left;
-    width: 50%;
-    overflow: auto;
+    width: 80%;
+    height: auto; /* Adjust height to fit content */
+    overflow: visible; /* Ensure no scroll */
 }
 
-.terminal{
+.terminal {
     background: #1e1e1e;
     color: #ffffff;
     padding: 20px;
@@ -151,8 +151,7 @@ button:hover {
     text-align: left;
     white-space: pre-wrap;
     display: inline-block;
-    text-align: left;
-    width: 50%;
-    height: 200px;
-    margin-bottom: 100px;
+    width: 80%;
+    height: auto; /* Adjust height to fit content */
+    overflow: visible; /* Ensure no scroll */
 }
