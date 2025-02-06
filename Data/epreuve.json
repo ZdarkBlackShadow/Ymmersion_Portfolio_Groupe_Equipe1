@@ -32,7 +32,7 @@
     {
         "id":3,
         "name":"Epreuve 3",
-        "description":"Créer un programme qui génère un mot de passe aléatoire de 8 à 16 caractères avec des majuscules, minuscules, et chiffres.",
+        "description":"En Golang, créer un programme qui génère un mot de passe aléatoire de 8 à 16 caractères avec des majuscules, minuscules, et chiffres.",
         "image":"",
         "ExempleRendu":"Générateur de mot de passe sécurisé\nEntrez la longueur du mot de passe (min 8, max 16) : 12\nMot de passe généré : mxKZ10cVr1tP",
         "codeGo":"package main\n\nimport (\n    \"fmt\"\n    \"math/rand\"\n    \"time\"\n)\n\nfunc main() {\n    fmt.Println(\"Entrez la longueur du mot de passe (Entre 8 et 16):\")\n    var input int\n    var mdp string\n    fmt.Scanln(&input)\n    if input < 8 || input > 16 {\n        fmt.Println(\"Longueur du mot de passe erronnée !\")\n    } else {\n        rand.Seed(time.Now().UnixNano())\n        var letters = []rune(\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\")\n        var digits = []rune(\"0123456789\")\n        var password []rune\n        for len(password) < input {\n            password = append(password, letters[rand.Intn(len(letters))])\n            password = append(password, digits[rand.Intn(len(digits))])\n        }\n        password = append(password, letters[rand.Intn(len(letters))])\n        password = append(password, digits[rand.Intn(len(digits))])\n        mdp = string(password)\n        fmt.Printf(\"Votre mot de passe généré est: %s\\n\", mdp)\n    }\n}",
