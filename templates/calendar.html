@@ -5,15 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendrier des événements</title>
-    <link rel="stylesheet" href="/static/css/Header.css">
     <link rel="stylesheet" href="/static/css/calendar.css">
 </head>
 <body>
-    <header>
-        <a href="/home" menu="menu"><h1>Ymmersion 2</h1></a>
-        <a href="/tableaudebord" class="lienHeader">Tableau de bord</a>
-        <a href="/calendar" class="lienHeader">Calendrier</a>
-    </header>    
+    {{template "header"}}  
     <h1 class="titre">Calendrier de la semaine</h1>
     <div class="calendar">
         <div class="day" id="lundi">

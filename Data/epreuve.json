@@ -43,5 +43,50 @@
         "timerInMinute":20,
         "when":"Mercredi 5 Février 2025 à 10H00",
         "learningLesson":["J'ai pu faire ressortir de mes souvenirs l'utilisation de la fonction rand(), ainsi que append. Deux fonctions bien utile, mais qui ont donné du fil à retordre à ma mémoire vieillissante ! "]
+    },
+    {
+        "id":4,
+        "name":"Epreuve 4",
+        "description":"Écrire un programme qui vérifie si un mot ou une phrase (sans espaces) est un palindrome (ex: 'radar', 'kayak').",
+        "image":"",
+        "ExempleRendu":"Bienvenue dans le jeu du Palindrome !\nEntrez un mot ou une phrase (ou tapez 'exit' pour quitter) :\n> Kayak\nC'est un palindrome !\n> radar\nC'est un palindrome !\n> Kheir-eddine\nCe n'est pas un palindrome.\n> Elle\nC'est un palindrome !",
+        "codeGo":"package main\n\nimport (\n    \"bufio\"\n    \"fmt\"\n    \"os\"\n    \"strings\"\n)\n\n// Fonction pour vérifier si une chaîne est un palindrome\nfunc isPalindrome(s string) bool {\n    // Convertir en minuscules et enlever les espaces\n    s = strings.ToLower(strings.ReplaceAll(s, \" \", \"\"))\n\n    // Comparer les caractères en miroir\n    n := len(s)\n    for i := 0; i < n/2; i++ {\n        if s[i] != s[n-1-i] {\n            return false\n        }\n    }\n    return true\n}\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n\n    fmt.Println(\"🔄 Bienvenue dans le jeu du Palindrome !\")\n    fmt.Println(\"➡️  Entrez un mot ou une phrase (ou tapez 'exit' pour quitter) :\")\n\n    for {\n        fmt.Print(\"> \")\n        scanner.Scan()\n        input := scanner.Text()\n\n        // Vérifier si l'utilisateur veut quitter\n        if strings.ToLower(input) == \"exit\" {\n            fmt.Println(\"👋 Merci d'avoir joué ! À bientôt !\")\n            break\n        }\n\n        // Vérifier si le mot est un palindrome\n        if isPalindrome(input) {\n            fmt.Println(\"✅ C'est un palindrome ! 🎉\")\n        } else {\n            fmt.Println(\"❌ Ce n'est pas un palindrome.\")\n        }\n    }\n}",
+        "codeHtml":"",
+        "codeCss":"",
+        "finalResult":"",
+        "finalResultCode":"🔄 Bienvenue dans le jeu du Palindrome !\n➡️  Entrez un mot ou une phrase (ou tapez 'exit' pour quitter) :\n> test\n❌ Ce n'est pas un palindrome.\n> kayak\n✅ C'est un palindrome ! 🎉\n> exit\n👋 Merci d'avoir joué ! À bientôt !",
+        "timerInMinute":30,
+        "when":"Jeudi 10H00",
+        "learningLesson":[]
+    },
+    {
+        "id":5,
+        "name":"Epreuve 5",
+        "description":"Écrire un programme qui analyse un texte et qui affiche le nombre de mots, le nombre de caractères et le mot le plus long.",
+        "image":"",
+        "ExempleRendu":"Analyseur de Texte\nEntrez un texte (ou tapez 'exit' pour quitter) :\n > Bonjour je m'appel Kheir-Eddine Mederreg\nRésultats de l'analyse :\nNombre de mots : 5\nNombre de caractères (sans espaces) : 36\nMot le plus long : \"Kheir-Eddine\"\n> Voici un texte, analyse le\nRésultats de l'analyse :\nNombre de mots : 5\nNombre de caractères (sans espaces) : 22\nMot le plus long : \"analyse\"",
+        "codeGo":"package main\n\nimport (\n    \"bufio\"\n    \"fmt\"\n    \"os\"\n    \"strings\"\n)\n\nfunc main() {\n    reader := bufio.NewReader(os.Stdin)\n\n    for {\n        fmt.Println(\"Entrez un texte (ou tapez 'exit' pour quitter) :\")\n        text, _ := reader.ReadString('\\n')\n        text = strings.TrimSpace(text)\n\n        if text == \"exit\" {\n            break\n        }\n\n        words := strings.Fields(text)\n        numWords := len(words)\n        numChars := 0\n        longestWord := \"kheir-eddine\"\n\n        for _, word := range words {\n            numChars += len(word)\n            if len(word) > len(longestWord) {\n                longestWord = word\n            }\n        }\n\n        fmt.Println(\"Résultats de l'analyse :\")\n        fmt.Printf(\"  - Nombre de mots : %d\\n\", numWords)\n        fmt.Printf(\"  - Nombre de caractères (sans espaces) : %d\\n\", numChars)\n        fmt.Printf(\"  - Mot le plus long : \\\"%s\\\"\\n\", longestWord)\n    }\n}",
+        "codeHtml":"",
+        "codeCss":"",
+        "finalResult":"",
+        "finalResultCode":"Entrez un texte (ou tapez 'exit' pour quitter) :\nceci est une phrase\nRésultats de l'analyse :\n  - Nombre de mots : 4\n  - Nombre de caractères (sans espaces) : 16\n  - Mot le plus long : \"phrase\"\nEntrez un texte (ou tapez 'exit' pour quitter) :\nexit",
+        "timerInMinute":30,
+        "when":"Jeudi 10H00",
+        "learningLesson":[]
+    },
+    {
+        "id":6,
+        "name":"Epreuve 6",
+        "description":"Écrire un programme qui évalue un mot de passe et affiche son niveau de sécurité (faible, moyen, fort). Les critéres sont une longeurs supérieur ou égale a 8, contient des chiffres, contient des lettres majuscules  et contient des symboles (!@#$%...)",
+        "image":"",
+        "ExempleRendu":"Vérificateur de Force de Mot de Passe\nEntrez un mot de passe (ou tapez 'exit' pour quitter)\n> Motdepasse123&\nSécurité : Fort (Bien sécurisé)\n> Motdepasse123\nSécurité : ▲ Moyen (Ajoutez des majuscules et des symboles)\n> Motdepasse\nSécurité : X Faible (Trop court ou manque de diversité)\n",
+        "codeGo":"package main\n\nimport (\n    \"fmt\"\n    \"strings\"\n)\n\nfunc main() {\n    var input string\n    fmt.Print(\"Rentrez un mot de passe : \")\n    fmt.Scanln(&input)\n    CheckPasswd(input)\n}\n\nfunc CheckPasswd(passwd string) {\n    if len(passwd) < 8 {\n        fmt.Println(\"Le mot de passe n'est pas assez long (minimum 8 caractères)\")\n        return\n    }\n    score := 0\n    if strings.ContainsAny(passwd, \"0123456789\") {\n        score++\n    }\n    if strings.ContainsAny(passwd, \"abcdefghijklmnopqrstuvwxyz\") {\n        score++\n    }\n    if strings.ContainsAny(passwd, \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\") {\n        score++\n    }\n    if strings.ContainsAny(passwd, \"!@#$%^&*()-_=+[]{}|;:,.<>/?\") {\n        score++\n    }\n    switch score {\n    case 1:\n        fmt.Println(\"Le mot de passe est faible\")\n    case 2:\n        fmt.Println(\"Le mot de passe est moyen\")\n    default:\n        fmt.Println(\"Le mot de passe est fort\")\n    }\n}\n",
+        "codeHtml":"",
+        "codeCss":"",
+        "finalResult":"",
+        "finalResultCode":"Rentrez un mot de passe : Sécurité1!\nLe mot de passe est fort",
+        "timerInMinute":20,
+        "when":"Jeudi 11H00",
+        "learningLesson":[]
     }
 ]
