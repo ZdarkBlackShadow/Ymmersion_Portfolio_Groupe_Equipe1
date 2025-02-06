@@ -11,7 +11,7 @@
 <body>
     {{template "header"}}
     <main>
-        <section id="commentaire">
+        <!--<section id="commentaire">
             <div class="rating" data-average="{{.Average}}">
                 <p>Average Rating: {{printf "%.2f" .Average}}</p>
             </div>
@@ -22,7 +22,7 @@
                     </div>
                 {{end}}
             </div>
-        </section>
+        </section>-->
         <section id="presentation">
             {{range .Data}}
                 <div class="team-member">
@@ -40,10 +40,10 @@
             <h2>Épreuve</h2>
             <nav>
                 <ul>
-                    {{range $index, $element := .Data}}
+                    {{range .Data}}
                         <li class="listeEpreuve">
                             <a href="{{.Epreuve}}" class="lienEpreuve">
-                                <p class="nameEpreuve">{{$index}}- {{.EpreuveName}}</p>
+                                <p class="nameEpreuve">{{.Id}}- {{.EpreuveName}}</p>
                                 <p class="description">{{.DescriptionEpreuve}}</p>
                             </a>
                         </li>
