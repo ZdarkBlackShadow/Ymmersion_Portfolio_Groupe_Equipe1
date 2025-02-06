@@ -8,22 +8,23 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
     window.addEventListener("scroll", showElements);
     showElements();
-    const homeButton = document.getElementById("homeButton");
-    let scaleUp = true;
 
-    setInterval(() => {
-        if (scaleUp) {
-            homeButton.style.transform = "scale(1.05)";
-        } else {
-            homeButton.style.transform = "scale(1)";
-        }
-        scaleUp = !scaleUp;
-    }, 1000);
-    homeButton.addEventListener("click", function () {
-        window.location.href = "templates/accueil.html";
-    });
+    const homeButton = document.getElementById("homeButton");
+    if (homeButton) {
+        let scaleUp = true;
+
+        setInterval(() => {
+            homeButton.style.transform = scaleUp ? "scale(1.05)" : "scale(1)";
+            scaleUp = !scaleUp;
+        }, 1000);
+
+        homeButton.addEventListener("click", function () {
+            window.location.href = "templates/accueil.html";
+        });
+    }
 });
 
 function showSection(sectionId) {
