@@ -9,53 +9,34 @@
     <link rel="stylesheet" href="https://cdnsjs.cloudflare.com/ajax/libs/Font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div>
-            <div class="animated-section">
-                <h1>Portfolio</h1>
-                <p>image de l'équipe et épreuve</p>
-            </div>
-        </div>
-    </header>
+    {{template "header"}}
     <main>
         <section id="presentation">
-            <div class="team-member">
-                <img src="/static/image/kellyan.jpg" alt="Kellyan" class="team-member-img" onclick="redirectToPage('Kellyan.html')">
-                <h3>Kellyan Icardi</h3>
-                <p>Rôle : développeurs Frontend</p>
-            </div>
-            <div class="team-member">
-                <img src="/static/image/Alexis.jpg" alt="Alexis" class="team-member-img" onclick="redirectToPage('Alexis.htm')">
-                <h3>Alexis Dupin</h3>
-                <p>Rôle : développeurs FullStack</p>
-
-            </div>
-            <div class="team-member">
-                <img src="/static/image/Adrien.jpg" alt="Adrien" class="team-member-img" onclick="redirectToPage('Adrien.htm')">
-                <h3>Adrien Lecomte</h3>
-                <p>Rôle : développeurs FullStack</p>
-            </div>
-            <div class="team-member">
-                <img src="/static/image/Alexandre.webp" alt="Alexandre" class="team-member-img" onclick="redirectToPage('Alexandre.htm')">
-                <h3>Alexandre Petitfrere</h3>
-                <p>Rôle : développeurs FullStack</p>
-            </div>
-            <div class="team-member">
-                <img src="/static/image/Yoan.jpg" alt="Yoan" class="team-member-img" onclick="redirectToPage('Yoan.htm')">
-                <h3>Yoan Commeau</h3>
-                <p>Rôle : développeurs Frontend</p>
-            </div>
-            <div class="team-member">
-                <img src="/static/image/Jonathan.jpg" alt="member6" class="team-member-img" onclick="redirectToPage('Jonathan.htm')">
-                <h3>Perez Jonathan</h3>
-                <p>Rôle : développeurs Frontend</p>
-            </div>
+            {{range .Data}}
+                <div class="team-member">
+                    <a href="{{.Epreuve}}">
+                        <img src="{{.Img}}" alt="Image de {{.Name}}" class="team-member-img">
+                        <h3>{{.Name}}</h3>
+                        <h4>Epreuve réalisé : {{.EpreuveName}}</h4>
+                        <p>Rôle : {{.RoleDescription}}</p>
+                        <p>Description : {{.Description}}</p>
+                    </a>
+                </div>
+            {{end}}
         </section>
         <section id="navigation">
             <div class="container">
                 <h2>Épreuve</h2>
                 <nav>
                     <ul>
+                        {{range .Data}}
+                            <li>
+                                <a href="{{.Epreuve}}">
+                                    <h2>{{.EpreuveName}}</h2>
+                                    <p>{{.DescriptionEpreuve}}</p>
+                                </a>
+                            </li>
+                        {{end}}
                         <li><a href="/alexis"></a></li>
                         <li><a href="/alexis"></a></li>
                         <li><a href="/adrien"></a></li>

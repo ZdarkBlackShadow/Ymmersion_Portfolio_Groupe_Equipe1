@@ -1,10 +1,11 @@
 {{define "alexis"}}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epreuve Adrien</title>
+    <title>Epreuve Alexis</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-go.min.js"></script>
@@ -12,30 +13,52 @@
     <link rel="stylesheet" href="/static/css/alexis.css">
     <link rel="icon" href="/static/image/icone.ico" type="image/x-icon">
 </head>
+
 <body>
-    <header>
-        <a href="/home" menu="menu"><h1>Ymmersion 2</h1></a>
-        <a href="/tableaudebord" class="lienHeader">Tableau de bord</a>
-        <a href="/calendar" class="lienHeader">Calendrier</a>
-    </header>
-    <h1>Génération d'un mot de passe aléatoire</h1>
-    <h2>Consigne</h2>
-    <p>{{.Description}}</p>
-    <h2>Détail de l'épreuve</h2>
-    <h3>Temps pour réaliser l'epreuve : </h3>
-    <p>{{.Timer}} min</p>
-    <h3>Date : </h3>
-    <p>{{.When}}</p>
+    {{template "header"}}
+    <h1>EPREUVE 3</h1>
+    <!-- Fenêtre avec les onglets -->
+    <div class="window">
+        <!-- Onglets -->
+        <div class="tabs">
+            <div class="tab tab1 active-tab" onclick="openTab('tab1') ">Consigne</div>
+            <div class="tab tab2" onclick="openTab('tab2')">Temps</div>
+            <div class="tab tab3" onclick="openTab('tab3')">Date</div>
+        </div>
+
+        <!-- Contenu des onglets -->
+        <div class="tab-content active-content" id="tab1">
+            <h2>Consigne</h2>
+            <p>{{.Description}}</p>
+        </div>
+
+        <div class="tab-content" id="tab2">
+            <h2>Temps</h2>
+            <p>{{.Timer}} min</p>
+        </div>
+
+        <div class="tab-content" id="tab3">
+            <h2>Date</h2>
+            <p>{{.When}}</p>
+        </div>
+    </div>
     <h2>Exemple de rendu</h2>
-    <div class="terminal"><pre>{{ .ExempleRenduCode }}</pre></div>
+    <div class="terminal">
+        <pre>{{ .ExempleRenduCode }}</pre>
+    </div>
     <h2>Code</h2>
     <pre><code class="language-go">{{ .CodeGo }}</code></pre>
     <h2>Rendu du code</h2>
-    <div class="terminal"><pre>{{ .FinalResultCode }}</pre></div>
+    <div class="terminal">
+        <pre>{{ .FinalResultCode }}</pre>
+    </div>
     <h2>Compétences utilisées</h2>
     {{range .LearningLesson}}
-        <p>{{.}}</p>
+    <p>{{.}}</p>
     {{end}}
+
+    <script src="/static/js/epreuveAlexis.js"></script>
 </body>
+
 </html>
 {{end}}

@@ -20,9 +20,10 @@ main {
     flex-direction: column;
     align-items: center;
     background-color: rgb(32, 32, 32);
-    border: outset 2px #fff;
+    border: solid 2px #fff;
     border-radius: 20px;
     box-shadow: 5px 5px 30px black;
+    width: 80%;
 }
 
 .infoEpreuve {
@@ -98,7 +99,7 @@ main {
 }
 
 .midle > span {
-    width: 45%;
+    width: 50%;
     height: 3px;
     background-color: #fff;
 }
@@ -110,27 +111,77 @@ main {
     border: 3px solid #fff;
     text-align: center;
     padding: 15px;
+    z-index: 1;
+    position: static;
 }
 
 .userEpreuve {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #fff;
+    padding: 15px;
+    width: 97.5%;
 }
 
-.infoUser {
+
+
+.socialUser {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: #fff solid 2px;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
 }
 
-.infoUser > img {
-    width: 10%;
+.socialUser > a > img {
+    width: 30px;
     border-radius: 50%;
+    background-color: #fff;
 }
 
-.dataUser {
+
+#profilUser {
+    width: 15%;
+    border-radius: 50%;
+    border: greenyellow 1px solid;
+}
+
+.result {
+    
+}
+
+
+.carousel {
+    padding-top: 5%;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    height: 600px;
+    overflow: hidden;
+}
+.carousel-inner {
     display: flex;
-    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.prev { left: 0; }
+.next { right: 0; }
+
+.language-html, .language-css {
+    overflow-y: scroll;
+    height: 500px;
 }

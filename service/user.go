@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-func GetUser() {
+func GetUser() UserStruct {
 	filePath := "./data/user.json"
 	var data UserStruct
 	fileContent, err := ioutil.ReadFile(filePath)
@@ -18,4 +18,5 @@ func GetUser() {
 			log.Fatalf("Erreur lors du décodage JSON : %v", err)
 		}
 	}
+	return data
 }
