@@ -11,3 +11,7 @@ func EpreuveJonathan(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 }
+
+func TextAnalyser(w http.ResponseWriter, r *http.Request) {
+
+}

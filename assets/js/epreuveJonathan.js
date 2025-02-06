@@ -37,3 +37,36 @@ function showSection(sectionId) {
         selectedSection.style.display = 'block';
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const formAnalyse = document.getElementById("formTextAnalyse");
+    if (formAnalyse) {
+        formAnalyse.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const texte = document.getElementById("textAnalyse").value;
+            fetch("/analyzeText", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ texte: texte })
+            })
+            .then(response => { 
+                if (!response.ok) {throw new Error("Erreur lors de l'analyse du texte");
+                }
+                return response.json();
+            })
+            .then(data => {
+                const resultText =
+                " - Résultats de l'analyse :\n" +
+                " - Nombre de mots : " + data.wordCount + "\n" +
+                " - Nombre de caractères (sans espaces) : " + data.charCount + "\n" +
+                " - Mot le plus long : \"" + data.longestWord + "\"";
+                document.getElementById("result").innerText = resultText; 
+            })
+            .catch(error => {
+                console.error("Erreur:", error);
+                document.getElementById("result").innerText = "Une erreur est survenue.";
+            });
+        });
+    }
+
+});
