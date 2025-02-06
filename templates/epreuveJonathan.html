@@ -11,13 +11,28 @@
     {{template "header"}}
     <div class="background-animation"></div>
     <div>
-        <h1 class="fade-in">Épreuve du Portfolio</h1>
-        <p class="fade-in delay">Développement réalisé en HTML, CSS et js</p>
+        <h1 class="fade-in show">Épreuve du Portfolio</h1>
+        <p class="fade-in show delay-1">Développement réalisé en HTML, CSS et JS</p>
     </div>   
     <main>
-        <section class="epreuve fade-in">
+        <section class="fade-in show delay-2">
             <h2>Titre de l'épreuve</h2>
             <p>Futur épreuve que j'aurai faite + Solution + Consigne + Corrigé</p>
+        </section>
+        <section class="fade-in show delay-3">
+            <h2>Language utilisées</h2>
+            <ul>
+                <li>GO</li>
+        </section>
+        <section class="fade-in show delay-4">
+            <h2>Épreuve</h2>
+            <ul>
+                <li>Consignes</li>
+                <li><button onclick="showCode('GO')">Mon Code Go</button></li>
+                <li>Correction</li>
+                <li>Temps nécessaire</li>
+            </ul>
+            <pre id="code-display" class="code code-display"></pre>
         </section>
     </main>
 </body>
