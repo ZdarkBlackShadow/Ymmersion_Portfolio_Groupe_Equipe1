@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Epreuve 1",
-        "description": "A l'aide des Langages HTML et CSS uniquement vous devez reproduire le dessin suivant.",
+        "description": "A l'aide des langages HTML et CSS uniquement, vous devez reproduire le dessin suivant.",
         "image": "ImageEpreuve1.png",
         "ExempleRendu": "",
         "codeGo" : "",
@@ -27,7 +27,7 @@
         "finalResultCode":"Bienvenue dans le jeu de devinettes !\nJe pense à un nombre entre 1 et 99. Pouvez-vous le devinez ?\n2\nC'est plus grand\n80\nC'est plus petit\n60\nC'est plus grand\n70\nC'est plus grand\n75\nC'est plus petit\n73\nC'est plus petit\n72\nBravo ! Vous avez trouvé le code en 7 tentatives",
         "timerInMinute":20,
         "when":"Lundi 14H40",
-        "learningLesson":["Les comparaisons avec le 'if' et les 'else'.","Comment demander a l'utilisateur un nombre avec la fonction 'scanln'.", "L'utilisation de 'printf' avec le formatage de donnée.", "L'utilisation d'une variable qui augmente a chaque tour de boucle.", "La génération d'un nombre aléatoire entre 1 et 100.", "Les boucles avec des conditions d'arret."]
+        "learningLesson":["Les comparaisons avec le 'if' et les 'else'.","Comment demander à l'utilisateur un nombre avec la fonction 'scanln'.", "L'utilisation de 'printf' avec le formatage de données.", "L'utilisation d'une variable qui augmente a chaque tour de boucle.", "La génération d'un nombre aléatoire entre 1 et 100.", "Les boucles avec des conditions d'arrêt."]
     },
     {
         "id":3,
