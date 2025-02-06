@@ -40,15 +40,16 @@ function showSection(sectionId) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const formAnalyse = document.getElementById("formTextAnalyse");
-    if (formAnalyse) {
-        formAnalyse.addEventListener("submit", function(e) {
+    const formTextAnalyse = document.getElementById("formTextAnalyse");
+    if (formTextAnalyse) {
+        formTextAnalyse.addEventListener("submit", function(e) {
             e.preventDefault();
-            const texte = document.getElementById("textAnalyse").value;
+
+            const inputText = document.getElementById("inputText").value;
             fetch("/analyzeText", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ texte: texte })
+                body: JSON.stringify({ inputText: inputText })
             })
             .then(response => { 
                 if (!response.ok) {throw new Error("Erreur lors de l'analyse du texte");
