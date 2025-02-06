@@ -11,9 +11,16 @@ type User struct {
 	DescriptionEpreuve string `json:"descriptionEpreuve"`
 	Epreuve            string `json:"epreuve"`
 }
+
+type Advice struct {
+	Note   []int  `json:"note"`
+	Advice string `json:"advice"`
+}
 type UserStruct struct {
-	List []string `json:"list"`
-	Data []User   `json:"data"`
+	List      []string `json:"list"`
+	Data      []User   `json:"data"`
+	AllAdvice []Advice `json:"allAdvice"`
+	Average   float64  `json:"average"`
 }
 
 //Structure pour les epreuves
