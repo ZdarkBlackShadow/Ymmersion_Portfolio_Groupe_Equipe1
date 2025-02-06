@@ -19,6 +19,39 @@
         <p class="fade-in show delay-1">Développement réalisé en HTML, CSS et JS</p>
     </div>   
     <main>
+        <h2>Consigne</h2>
+        <p>{{.Description}}</p>
+        <h2>Détail de l'épreuve</h2>
+        <h3>Temps pour réaliser l'epreuve :</h3>
+        <p>{{.Timer}} min</p>
+        <h3>Date :</h3>
+        <p>{{.When}}</p>
+        <h2>Exemple de rendu</h2>
+        <div class="terminal">
+          <pre>{{ .ExempleRenduCode }}</pre>
+        </div>
+        <div class="code-go">
+          <h2>Code</h2>
+          <pre><code class="language-go">{{ .CodeGo }}</code></pre>
+        </div>
+
+        <h2>Rendu du code</h2>
+        <div class="terminal">
+            <h2>Analyse de texte</h2>
+            <form id="formTextAnalyse">
+                <label for="inputText">Entrez un texte à analyser :</label>
+                <input type="text" id="inputText" name="inputText" required>
+                <button type="submit">Analyse</button>
+            </form>
+            <div id="result" class="terminal">
+                <!-- Le mot de passe généré sera affiché ici -->
+            </div>
+        </div>
+
+        <h2>Compétences utilisées</h2>
+        {{range .LearningLesson}}
+        <p>{{.}}</p>
+        {{end}}
         <section class="fade-in show delay-3">
             <h2>Langages utilisés</h2>
             <ul>
