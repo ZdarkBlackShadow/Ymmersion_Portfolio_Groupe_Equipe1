@@ -13,11 +13,11 @@ header {
     background-color: rgb(54, 53, 53);
     border-bottom: 2px solid white;
     width: 100%;
+    height: 150px;
     box-shadow:
     0 0 8px #fff,
     0 0 20px #f7ec13,
     0 0 32px #f7af13;
-    font-size: 1.6em;
     box-sizing: border-box;
 }
 
@@ -36,6 +36,10 @@ header {
 
 .divLien > a:hover {
     color: goldenrod;
+}
+
+.lienHeader {
+    font-size: 1.2em;
 }
 
 #menu > a {
@@ -69,8 +73,8 @@ header {
     border-radius: 10px;
     color: #fff;
     padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .epreuveLien > a:hover {
