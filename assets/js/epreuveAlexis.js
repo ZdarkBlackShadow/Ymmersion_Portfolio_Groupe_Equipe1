@@ -15,11 +15,11 @@ function openTab(tabId) {
 
     // Changer la couleur de fond de chaque onglet
     tabs.forEach(tab => {
-        tab.style.backgroundColor = "#fd9595"; // Réinitialise la couleur de fond pour tous
+        tab.style.backgroundColor = "#ffffff"; // Réinitialise la couleur de fond pour tous
     });
 
     // Appliquer une nouvelle couleur de fond pour l'onglet actif
-    activeTab.style.backgroundColor = "#9cfea2"; // Changer la couleur de fond de l'onglet actif
+    activeTab.style.backgroundColor = "#0ed300"; // Changer la couleur de fond de l'onglet actif
 } 
 
 // Lorsque le DOM est chargé, on ajoute l'écouteur d'événement pour le formulaire
