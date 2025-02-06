@@ -9,14 +9,15 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Arial', sans-serif;
-    background-color: #1E1E2E;
+    background-color: #2D2E2E;
     min-height: 100vh;
 }
 
 .titre {
-    color: #d29209;
+    color: #3E92CC;
     margin-top: 50px;
     text-align: center;
+    font-weight:bolder
 }
 
 .calendar {
@@ -29,7 +30,7 @@ body {
 }
 
 .day {
-    background-color: #ffffff;
+    background-color: #0C0C0C;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -38,8 +39,8 @@ body {
 
 .day h2 {
     text-align: center;
-    color: #333;
-    background-color: #d29209; /* Couleur unique par jour */
+    color: #291720;
+    background-color: #C1BFB5; /* Couleur unique par jour */
     color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 5px;
@@ -47,7 +48,7 @@ body {
 }
 
 .event {
-    background-color: #000000;
+    background-color: #D3D0CB;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -55,17 +56,17 @@ body {
 }
 
 .event h3 {
-    color: #333;
+    color: #FDFFF7;
     font-size: 16px;
 }
 
 .event p {
-    color: #777;
+    color: #2E5266;
     font-size: 14px;
 }
 
 .day:hover {
-    background-color: #f9f9f9; /* Effet de survol */
+    background-color: #E2C044; /* Effet de survol */
     transform: translateY(-5px);
     transition: all 0.3s ease;
 }
