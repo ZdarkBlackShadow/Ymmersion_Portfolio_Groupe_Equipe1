@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #222222; /* Gris foncé au lieu de noir */
-    background: #E6ECFF; /* Bleu plus clair */
+    background: black; /* Bleu plus clair */
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -123,44 +123,7 @@ header h1 {
 }
 
 /* Navigation */
-#navigation {
-    padding: 40px 0;
-    background: rgba(40, 40, 40, 0.85); /* Moins sombre */
-    border-radius: 10px;
-    margin-top: 5px;
-    animation: fadeIn 1.5s ease-in-out;
-}
 
-#navigation h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #F5F5F5;
-    line-height: 3;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #E6ECFF;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: 2px solid #E6ECFF;
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s, transform 0.3s;
-}
-
-nav ul li a:hover {
-    background: #E6ECFF;
-    color: #222222;
-    transform: scale(1.1);
-}
 
 /* Footer */
 footer {
@@ -281,3 +244,75 @@ footer p {
         opacity: 1;
     }
 }
+
+/*===================================================Lite Epreuve====================================*/
+
+#navigation {
+    padding: 40px 0;
+    background: rgba(40, 40, 40, 0.85); /* Moins sombre */
+    border-radius: 10px;
+    margin-top: 5px;
+    animation: fadeIn 1.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navigation h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #F5F5F5;
+    line-height: 3;
+    border: #fff 3px solid;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 1000px;
+    background-color: #222222;
+}
+
+
+nav {
+    width: 1000px;
+    border: #fff 3px solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+ul {
+    display: flex;
+    gap: 5%;
+    overflow-x: scroll;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+.lienEpreuve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border: #b6b6b6 2px solid;
+    border-radius: 20px;
+    color: #fff;
+    width: 200px;
+    
+}
+
+.nameEpreuve {
+    padding: 10px;
+    background-color: #222222;
+    width: 100%;
+    border-bottom: #b6b6b6 2px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.description {
+    padding: 5px;
+}
+
+
+
+
