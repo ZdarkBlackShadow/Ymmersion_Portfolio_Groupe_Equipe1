@@ -1,3 +1,22 @@
 footer {
-    color: aliceblue;
+    background: rgba(40, 40, 40, 0.85); /* Moins sombre */
+    color: #E6ECFF;
+    text-align: center;
+    padding: 20px ;
+    margin-top: 5px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.lienGithub {
+    text-decoration: none;
+    color: #fff;
+}
+
+.lienGithub:hover {
+    color: goldenrod;
 }

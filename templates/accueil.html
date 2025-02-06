@@ -11,25 +11,13 @@
 <body>
     {{template "header"}}
     <main>
-        <!--<section id="commentaire">
-            <div class="rating" data-average="{{.Average}}">
-                <p>Average Rating: {{printf "%.2f" .Average}}</p>
-            </div>
-            <div class="comments-box">
-                {{range .AllAdvice}}
-                    <div class="comment">
-                        <p>{{.Advice}}</p>
-                    </div>
-                {{end}}
-            </div>
-        </section>-->
         <section id="presentation">
             {{range .Data}}
                 <div class="team-member">
                     <a href="{{.Epreuve}}">
                         <img src="{{.Img}}" alt="Image de {{.Name}}" class="team-member-img">
                         <h3>{{.Name}}</h3>
-                        <h4>Epreuve réalisé : {{.EpreuveName}}</h4>
+                        <h4>Epreuve réalisée : {{.EpreuveName}}</h4>
                         <p>Rôle : {{.RoleDescription}}</p>
                         <p>Description : {{.Description}}</p>
                     </a>
@@ -37,7 +25,7 @@
             {{end}}
         </section>
         <section id="navigation"> 
-            <h2>Épreuve</h2>
+            <h2>Épreuves</h2>
             <nav>
                 <ul>
                     {{range .Data}}
@@ -51,19 +39,20 @@
                 </ul>
             </nav>
         </section>
+                <!--<section id="commentaire">
+            <div class="rating" data-average="{{.Average}}">
+                <p>Average Rating: {{printf "%.2f" .Average}}</p>
+            </div>
+            <div class="comments-box">
+                {{range .AllAdvice}}
+                    <div class="comment">
+                        <p>{{.Advice}}</p>
+                    </div>
+                {{end}}
+            </div>
+        </section>-->
     </main>
-    <footer>
-        <div class="container">
-            <p>&copy; Équipe du projet
-                <a href="https://github.com/ZdarkBlackShadow" class="lienGithub">- Adrien Lecomte  :  [Github]</a>
-                <a href="https://github.com/Mirkium" class="lienGithub">Alexandre Petitfrere  :  [Github]</a>
-                <a href="https://github.com/Jonathan-p-z" class="lienGithub">- Jonathan Perez  :  [Github]</a>
-                <a href="https://github.com/Jonathan-p-z" class="lienGithub">Yoan Commeau  :  [Github]</a>
-                <a href="https://github.com/Linijarae" class="lienGithub">- Alexis Dupin  :  [Github]</a>
-                <a href="https://github.com/StorkX13" class="lienGithub">- Kellyan Icardi  :  [github]</a>
-            </p>
-        </div>
-    </footer>
+    {{template "footer"}}
     <script src="/static/js/accueil.js"></script>
 </body>
 </html>
