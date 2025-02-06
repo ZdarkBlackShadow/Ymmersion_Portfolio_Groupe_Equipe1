@@ -6,18 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Épreuve du Portfolio</title>
     <link rel="stylesheet" href="/static/css/epreuveJonathan.css">
+    <script src="/static/js/epreuveJonathan.js" defer></script>
 </head>
 <body>
     {{template "header"}}
     <div class="background-animation"></div>
     <div>
-        <h1 class="fade-in">Épreuve du Portfolio</h1>
-        <p class="fade-in delay">Développement réalisé en HTML, CSS et js</p>
+        <h1 class="fade-in show">Épreuve du Portfolio</h1>
+        <p class="fade-in show delay-1">Développement réalisé en HTML, CSS et JS</p>
     </div>   
     <main>
-        <section class="epreuve fade-in">
+        <section class="fade-in show delay-2">
             <h2>Titre de l'épreuve</h2>
             <p>Futur épreuve que j'aurai faite + Solution + Consigne + Corrigé</p>
+        </section>
+        <section class="fade-in show delay-3">
+            <h2>Langages utilisés</h2>
+            <ul>
+                <li>GO</li>
+            </ul>
+        </section>
+        <section class="fade-in show delay-4">
+            <h2>Épreuve</h2>
+            <div class="button-container">
+                <button onclick="showSection('consignes')">Consignes</button>
+                <button onclick="showSection('code')">Mon Code</button>
+                <button onclick="showSection('correction')">Correction</button>
+                <button onclick="showSection('temps')">Temps nécessaire</button>
+            </div>
+            <div id="consignes" class="section-content">
+                <h3>Consignes</h3>
+                <p>Décrivez ici les consignes de l'épreuve.</p>
+            </div>
+            <div id="code" class="section-content">
+                <h3>Mon Code</h3>
+                <pre><code class="language-html">Votre code ici</code></pre>
+            </div>
+            <div id="correction" class="section-content">
+                <h3>Correction</h3>
+                <p>Décrivez ici la correction de l'épreuve.</p>
+            </div>
+            <div id="temps" class="section-content">
+                <h3>Temps nécessaire</h3>
+                <p>Indiquez ici le temps qu'il vous a fallu pour réaliser l'épreuve.</p>
+            </div>
         </section>
     </main>
 </body>
