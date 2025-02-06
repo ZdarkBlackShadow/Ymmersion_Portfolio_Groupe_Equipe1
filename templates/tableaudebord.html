@@ -1,7 +1,6 @@
 {{define "tableaudebord"}}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +8,20 @@
     <title>Tableau de bord</title>
 
 </head>
-
 <body>
     {{template "header"}}
     <div>
         <h1>Bienvenue sur le tableau de bord</h1>
         <div>
-            {{range .Data}}
-            <div>
-                <h2>═══════════════════════════════════════════════════════════════════════════════════════════════════════════</h2>
-                <h2>Épreuve {{.Id}}: {{.EpreuveName}}</h2>
-                <h3>Épreuve réalisée par <a href="{{.Epreuve}}">{{.Name}}</a></h3>
-                <h3>Notez la performance de {{.Name}} après être allé voir sa page : <br></h3>
-            </div>
             <div class="rating-buttons">
-                <form action="/rating?id={{.Id}}" method="post">
+                <form action="/rating" method="post">
+                    {{range .Data}}
+                    <div>
+                        <h2>═══════════════════════════════════════════════════════════════════════════════════════════════════════════</h2>
+                        <h2>Épreuve {{.Id}}: {{.EpreuveName}}</h2>
+                        <h3>Épreuve réalisée par <a href="{{.Epreuve}}">{{.Name}}</a></h3>
+                        <h3>Notez la performance de {{.Name}} après être allé voir sa page : <br></h3>
+                    </div>
                     <div>
                         <input type="radio" id="rating1_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="1">
                         <label class="rating-button" for="rating1_{{.Id}}">Médiocre</label>
@@ -35,9 +33,9 @@
                         <label class="rating-button" for="rating3_{{.Id}}">Impressionnante</label>
                     </div>
                     <button type="submit">Valider</button>
+                    {{end}}
                 </form>
             </div>
-            {{end}}
         </div>
     </div>
 </body>
