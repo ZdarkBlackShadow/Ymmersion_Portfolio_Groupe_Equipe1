@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Épreuve du Portfolio</title>
+    <link rel="stylesheet" href="/static/css/epreuveJonathan.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-go.min.js"></script>
-    <link rel="stylesheet" href="/static/css/epreuveJonathan.css">
     <script src="/static/js/epreuveJonathan.js" defer></script>
 </head>
 <body>
@@ -34,10 +34,20 @@
           <h2>Code</h2>
           <pre><code class="language-go">{{ .CodeGo }}</code></pre>
         </div>
+
         <h2>Rendu du code</h2>
         <div class="terminal">
-          <pre>{{ .FinalResultCode }}</pre>
+            <h2>Analyse de texte</h2>
+            <form id="formTextAnalyse">
+                <label for="inputText">Entrez un texte à analyser :</label>
+                <input type="text" id="inputText" name="inputText" required>
+                <button type="submit">Analyse</button>
+            </form>
+            <div id="result" class="terminal">
+                <!-- Le mot de passe généré sera affiché ici -->
+            </div>
         </div>
+
         <h2>Compétences utilisées</h2>
         {{range .LearningLesson}}
         <p>{{.}}</p>
@@ -52,17 +62,21 @@
             <h2>Épreuve</h2>
             <div class="button-container">
                 <button onclick="showSection('consignes')">Consignes</button>
-                <button onclick="showSection('code')">Mon Code</button>
+                <button onclick="showSection('code')">Mon Code et Rendu</button>
                 <button onclick="showSection('correction')">Correction</button>
                 <button onclick="showSection('temps')">Temps nécessaire</button>
             </div>
             <div id="consignes" class="section-content">
                 <h3>Consignes</h3>
-                <p>Décrivez ici les consignes de l'épreuve.</p>
+                <p>{{.Description}}</p>
             </div>
             <div id="code" class="section-content">
                 <h3>Mon Code</h3>
-                <pre><code class="language-html">Mon code ici</code></pre>
+                <pre><code class="language-go">{{ .CodeGo }}</code></pre>
+                <h3>Rendu du code</h3>
+                <div class="terminal">
+                    <pre>{{ .FinalResultCode }}</pre>
+                </div>
             </div>
             <div id="correction" class="section-content">
                 <h3>Correction</h3>
@@ -70,7 +84,7 @@
             </div>
             <div id="temps" class="section-content">
                 <h3>Temps nécessaire</h3>
-                <p>Indiquez ici le temps qu'il vous a fallu pour réaliser l'épreuve.</p>
+                <p>{{.Timer}} min</p>
             </div>
         </section>
     </main>

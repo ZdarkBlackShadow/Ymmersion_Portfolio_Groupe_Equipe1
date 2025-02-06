@@ -42,6 +42,7 @@ func InitServer() {
 	http.HandleFunc("/generatePasswd", GeneratePasswdHandler)
 	http.HandleFunc("/kellyan", EpreuveKellyan)
 	http.HandleFunc("/jonathan", EpreuveJonathan)
+	http.HandleFunc("/analyzeText", TextAnalyser)
 	http.HandleFunc("/yoan", YoanHandle)
 	http.HandleFunc("/rating", Rating)
 	fileserver := http.FileServer(http.Dir("./assets"))

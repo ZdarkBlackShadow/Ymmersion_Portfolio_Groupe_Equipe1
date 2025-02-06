@@ -11,7 +11,7 @@
 <body>
     {{template "header"}}
     <main>
-        <section id="commentaire">
+        <!--<section id="commentaire">
             <div class="rating" data-average="{{.Average}}">
                 <p>Average Rating: {{printf "%.2f" .Average}}</p>
             </div>
@@ -22,7 +22,7 @@
                     </div>
                 {{end}}
             </div>
-        </section>
+        </section>-->
         <section id="presentation">
             {{range .Data}}
                 <div class="team-member">
@@ -36,28 +36,20 @@
                 </div>
             {{end}}
         </section>
-        <section id="navigation">
-            <div class="container">
-                <h2>Épreuve</h2>
-                <nav>
-                    <ul>
-                        {{range .Data}}
-                            <li>
-                                <a href="{{.Epreuve}}">
-                                    <h2>{{.EpreuveName}}</h2>
-                                    <p>{{.DescriptionEpreuve}}</p>
-                                </a>
-                            </li>
-                        {{end}}
-                        <li><a href="/alexis"></a></li>
-                        <li><a href="/alexis"></a></li>
-                        <li><a href="/adrien"></a></li>
-                        <li><a href="/alexandre"></a></li>
-                        <li><a href="/yoan"></a></li>
-                        <li><a href="/jonathan"></a></li>
-                    </ul>
-                </nav>
-            </div>
+        <section id="navigation"> 
+            <h2>Épreuve</h2>
+            <nav>
+                <ul>
+                    {{range .Data}}
+                        <li class="listeEpreuve">
+                            <a href="{{.Epreuve}}" class="lienEpreuve">
+                                <p class="nameEpreuve">{{.Id}}- {{.EpreuveName}}</p>
+                                <p class="description">{{.DescriptionEpreuve}}</p>
+                            </a>
+                        </li>
+                    {{end}}
+                </ul>
+            </nav>
         </section>
     </main>
     <footer>
