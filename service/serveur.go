@@ -39,6 +39,7 @@ func InitServer() {
 	http.HandleFunc("/alexandre", EpreuveAlexandre)
 	http.HandleFunc("/calendar", calendarHandler)
 	http.HandleFunc("/alexis", EpreuveAlexis)
+	http.HandleFunc("/generatePasswd", GeneratePasswdHandler)
 	http.HandleFunc("/kellyan", EpreuveKellyan)
 	http.HandleFunc("/jonathan", EpreuveJonathan)
 	http.HandleFunc("/yoan", YoanHandle)
