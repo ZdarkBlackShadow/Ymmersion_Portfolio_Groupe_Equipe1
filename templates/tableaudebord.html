@@ -11,111 +11,33 @@
 </head>
 
 <body>
+    {{template "header"}}
     <div>
         <h1>Bienvenue sur le tableau de bord</h1>
         <div>
-
-            <form action="/traitement" method="POST">
-                <div>
-                    <h2>═══════════════════════════════════════════════════════════════════════════════════════════════════════════
-                    </h2>
-                    <h2>1ère épreuve : Dessiner une tête de creeper en HTML/CSS.</h2>
-                    <h3>Epreuve réalisée par <a href="http://localhost:8080/alexandre">Alexandre</a></h3>
-                    <h3>Notez la performance d'Alexandre après être allé voir sa page : <br></h3>
-                </div>
-
-                <div class="rating-buttons">
-                    <input type="radio" id="rating1" name="rating1" class="rating-input" data-value="1">
-                    <label class="rating-button" for="rating1">Médiocre</label>
-
-                    <input type="radio" id="rating2" name="rating1" class="rating-input" data-value="2" checked>
-                    <label class="rating-button" for="rating2">Correcte</label>
-
-                    <input type="radio" id="rating3" name="rating1" class="rating-input" data-value="3">
-                    <label class="rating-button" for="rating3">Impressionante</label>
-
-                </div>
-                <h2>═══════════════════════════════════════════════════════════════════════════════════════════════════════════
-                </h2>
-                <h2>2ème épreuve : Coder un "plus petit/plus grand", dans lequel le joueur doit trouver le
-                    nombre cible entre 1 et 100.</h2>
-                <h3>Epreuve réalisée par <a href="http://localhost:8080/adrien">Adrien</a></h3>
-                <h3>Notez la performance d'Adrien après être allé voir sa page : </h3>
-                <div class="rating-buttons">
-                    <input type="radio" id="rating4" name="rating2" class="rating-input" data-value="4">
-                    <label class="rating-button" for="rating4">Médiocre</label>
-
-                    <input type="radio" id="rating5" name="rating2" class="rating-input" data-value="5" checked>
-                    <label class="rating-button" for="rating5">Correcte</label>
-
-                    <input type="radio" id="rating6" name="rating2" class="rating-input" data-value="6">
-                    <label class="rating-button" for="rating6">Impressionante</label>
-                </div>
-
-                <h2>═══════════════════════════════════════════════════════════════════════════════════════════════════════════
-                </h2>
-                <h2>3ème épreuve : Coder un mot de passe généré aléatoirement.</h2>
-                <h3>Epreuve réalisée par <a href="http://localhost:8080/alexis">Alexis</a></h3>
-                <h3>Notez la performance d'Alexis après être allé voir sa page : </h3>
-                <div class="rating-buttons">
-                    <input type="radio" id="rating7" name="rating3" class="rating-input" data-value="7">
-                    <label class="rating-button" for="rating7">Médiocre</label>
-
-                    <input type="radio" id="rating8" name="rating3" class="rating-input" data-value="8" checked>
-                    <label class="rating-button" for="rating8">Correcte</label>
-
-                    <input type="radio" id="rating9" name="rating3" class="rating-input" data-value="9">
-                    <label class="rating-button" for="rating9">Impressionante</label>
-                </div>
-                <h2>═══════════════════════════════════════════════════════════════════════════════════════════════════════════
-                </h2>
-                <h2>4ème épreuve : Xxxxxx xxxxxxxx xxxxxx</h2>
-                <h3>Epreuve réalisée par <a href="http://localhost:8080/xxxxx">Xxxxxx</a></h3>
-                <h3>Notez la performance de Xxxxxx après être allé voir sa page : </h3>
-                <div class="rating-buttons">
-                    <input type="radio" id="rating10" name="rating4" class="rating-input" data-value="10">
-                    <label class="rating-button" for="rating10">Médiocre</label>
-
-                    <input type="radio" id="rating11" name="rating4" class="rating-input" data-value="11" checked>
-                    <label class="rating-button" for="rating11">Correcte</label>
-
-                    <input type="radio" id="rating12" name="rating4" class="rating-input" data-value="12">
-                    <label class="rating-button" for="rating12">Impressionante</label>
-                </div>
-                <h2>═══════════════════════════════════════════════════════════════════════════════════════════════════════════
-                </h2>
-                <h2>5ème épreuve : Xxxxxx xxxxxxxx xxxxxx</h2>
-                <h3>Epreuve réalisée par <a href="http://localhost:8080/xxxxx">Xxxxxx</a></h3>
-                <h3>Notez la performance de Xxxxxx après être allé voir sa page : </h3>
-                <div class="rating-buttons">
-                    <input type="radio" id="rating13" name="rating5" class="rating-input" data-value="13">
-                    <label class="rating-button" for="rating13">Médiocre</label>
-
-                    <input type="radio" id="rating14" name="rating5" class="rating-input" data-value="14" checked>
-                    <label class="rating-button" for="rating14">Correcte</label>
-
-                    <input type="radio" id="rating15" name="rating5" class="rating-input" data-value="15">
-                    <label class="rating-button" for="rating15">Impressionante</label>
-                </div>
-                <h2>═══════════════════════════════════════════════════════════════════════════════════════════════════════════
-                </h2>
-                <h2>6ème épreuve : Xxxxxx xxxxxxxx xxxxxx</h2>
-                <h3>Epreuve réalisée par <a href="http://localhost:8080/xxxxx">Xxxxxx</a></h3>
-                <h3>Notez la performance de Xxxxxx après être allé voir sa page : </h3>
-                <div class="rating-buttons">
-                    <input type="radio" id="rating16" name="rating6" class="rating-input" data-value="16">
-                    <label class="rating-button" for="rating16">Médiocre</label>
-
-                    <input type="radio" id="rating17" name="rating6" class="rating-input" data-value="17" checked>
-                    <label class="rating-button" for="rating17">Correcte</label>
-
-                    <input type="radio" id="rating18" name="rating6" class="rating-input" data-value="18">
-                    <label class="rating-button" for="rating18">Impressionante</label>
-                </div>
-                <div>
-                <button type="submit">Soumettre votre notation</button>
+            {{range .Data}}
+            <div>
+                <h2>═══════════════════════════════════════════════════════════════════════════════════════════════════════════</h2>
+                <h2>Épreuve {{.Id}}: {{.EpreuveName}}</h2>
+                <h3>Épreuve réalisée par <a href="{{.Epreuve}}">{{.Name}}</a></h3>
+                <h3>Notez la performance de {{.Name}} après être allé voir sa page : <br></h3>
             </div>
-            </form>
+            <div class="rating-buttons">
+                <form action="/rating?id={{.Id}}" method="post">
+                    <div>
+                        <input type="radio" id="rating1_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="1">
+                        <label class="rating-button" for="rating1_{{.Id}}">Médiocre</label>
+        
+                        <input type="radio" id="rating2_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="2" checked>
+                        <label class="rating-button" for="rating2_{{.Id}}">Correcte</label>
+        
+                        <input type="radio" id="rating3_{{.Id}}" name="rating_{{.Id}}" class="rating-input" value="3">
+                        <label class="rating-button" for="rating3_{{.Id}}">Impressionnante</label>
+                    </div>
+                    <button type="submit">Valider</button>
+                </form>
+            </div>
+            {{end}}
         </div>
     </div>
 </body>
