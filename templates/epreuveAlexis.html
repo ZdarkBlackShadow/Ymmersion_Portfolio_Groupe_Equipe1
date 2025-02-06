@@ -15,9 +15,12 @@
 </head>
 
 <body>
+    // NE PAS REFORMER LA PAGE SVP
     {{template "header"}}
-    <span></span>
-    <h1>↓ ↓ ↓ ■═══════■ EPREUVE 3 ■═══════■ ↓ ↓ ↓</h1>
+    <div style="font-family: monospace; text-align: center; white-space: pre; font-size: xx-large;">
+<span style="color: rgb(117, 117, 117);">╔╗          ╔╗                              ╔╗          ╔╗</span>
+<span style="color: rgb(173, 116, 9);">██</span>══════<span style="color: rgb(173, 116, 9);">██</span>════ EPREUVE 3 ════<span style="color: rgb(173, 116, 9);">██</span>══════<span style="color: rgb(173, 116, 9);">██</span>
+        </div>
     <!-- Fenêtre avec les onglets -->
     <div class="window">
         <!-- Onglets -->
@@ -43,14 +46,23 @@
             <p>{{.When}}</p>
         </div>
     </div>
-    <h2> █▀════ Exemple de rendu ════▀█</h2>
+    <div style="font-family: monospace; text-align: center; white-space: pre; font-size: x-large;">
+╔╗                          ╔╗
+██════ Exemple de rendu ════██
+        </div>
     <div class="terminal">
         <pre>{{ .ExempleRenduCode }}</pre>
     </div>
-    <h2>█▀════ Code ════▀█</h2>
+    <div style="font-family: monospace; text-align: center; white-space: pre; font-size: x-large;">
+╔╗              ╔╗
+██════ Code ════██
+        </div>
     <pre><code class="language-go">{{ .CodeGo }}</code></pre>
 
-    <h2>█▀════ Rendu du code ════▀█</h2>
+    <div style="font-family: monospace; text-align: center; white-space: pre; font-size: x-large;">
+╔╗                       ╔╗
+██════ Rendu du code ════██
+        </div>
     <div class="test">
         <h2>Générateur de mot de passe</h2>
         <form id="formPassword">
@@ -69,5 +81,6 @@
     {{end}}
     <script src="/static/js/epreuveAlexis.js"></script>
 </body>
+
 </html>
 {{end}}
