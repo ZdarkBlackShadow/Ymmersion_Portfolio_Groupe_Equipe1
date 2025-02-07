@@ -10,7 +10,7 @@
   "data": [
     {
       "name": "Alexandre Petitfrere",
-      "description": "Le pervers originel, son idole s'appelle tonton H et il n'est jamais à l'heure",
+      "description": "L'alcoolo originel, son idole s'appelle 'Défonce sans modération' et il n'est jamais à l'heure",
       "id": 1,
       "img": "/static/image/Alexandre.webp",
       "roleDescription": "développeur frontend",
@@ -43,7 +43,7 @@
       "description": "Fait croire qu'il est vieux avec sa barbe mais c'est un 2004",
       "id": 4,
       "img": "/static/image/Jonathan.jpg",
-      "roleDescription": "Analyse d'un texte",
+      "roleDescription": "développeur frontend",
       "epreuveName": "Analyse d'un texte",
       "descriptionEpreuve": "Écrire un programme qui analyse un texte et qui affiche le nombre de mots, le nombre de caractères et le mot le plus long.",
       "epreuve": "/jonathan"
