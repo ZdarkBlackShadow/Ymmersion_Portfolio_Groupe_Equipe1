@@ -87,6 +87,6 @@
         "finalResultCode":"Rentrez un mot de passe : Sécurité1!\nLe mot de passe est fort",
         "timerInMinute":20,
         "when":"Jeudi 11H00",
-        "learningLesson":[]
+        "learningLesson":["Redécouverte des bases du langage JS"]
     }
 ]

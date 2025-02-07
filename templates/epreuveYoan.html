@@ -1,6 +1,7 @@
 {{define "yoan"}}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,32 +12,42 @@
     <link rel="stylesheet" href="/static/css/yoan.css">
     <link rel="icon" href="/static/image/icone.ico" type="image/x-icon">
 </head>
+
 <body>
-    {{template "header"}}
-    <h2>Consigne</h2>
-    <p>{{.Description}}</p>
-    <h2>Détail de l'épreuve</h2>
-    <h3>Temps pour réaliser l'epreuve :</h3>
-    <p>{{.Timer}} min</p>
-    <h3>Date :</h3>
-    <p>{{.When}}</p>
-    <h2>Exemple de rendu</h2>
-    <div class="terminal">
-      <pre>{{ .ExempleRenduCode }}</pre>
-    </div>
-    <div class="code-go">
-      <h2>Code</h2>
-      <pre><code class="language-go">{{ .CodeGo }}</code></pre>
-    </div>
-    <h2>Rendu du code</h2>
-    <h2>Compétences utilisées</h2>
-    <div class="terminal">
-      <pre>{{ .FinalResultCode }}</pre>
-    </div>
-    {{range .LearningLesson}}
-    <p>{{.}}</p>
-    {{end}}
-    {{template "footer"}}
+  {{template "header"}}
+  <h2>Consigne</h2>
+  <p>{{.Description}}</p>
+  <h2>Détail de l'épreuve</h2>
+  <h3>Temps pour réaliser l'epreuve :</h3>
+  <p>{{.Timer}} min</p>
+  <h3>Date :</h3>
+  <p>{{.When}}</p>
+  <h2>Exemple de rendu</h2>
+  <div class="terminal">
+    <pre>{{ .ExempleRenduCode }}</pre>
+  </div>
+  <div class="code-go">
+    <h2>Code</h2>
+    <pre><code class="language-go">{{ .CodeGo }}</code></pre>
+  </div>
+  <h2>Rendu du code</h2>
+  <h2>Compétences utilisées</h2>
+  <div class="terminal">
+    <pre><h2 style="color: rgb(117, 117, 117);">Niveau de sécurité</h2>
+        <form id="formPasswd">
+          <label for="passwd">Entrez un mot de passe pour vérifier son niveau de sécurité :</label>
+          <input type="text" id="passwd" name="passwd" placeholder="Ecrivez votre mot de passe ici" hrequired>
+          <button type="submit"> Vérification </button>
+        </form>
+        <div id="result">
+        </div></pre>
+  </div>
+  {{range .LearningLesson}}
+  <p>{{.}}</p>
+  {{end}}
+  <script src="/static/js/epreuveYoan.js"></script>
+  {{template "footer"}}
 </body>
+
 </html>
 {{end}}
