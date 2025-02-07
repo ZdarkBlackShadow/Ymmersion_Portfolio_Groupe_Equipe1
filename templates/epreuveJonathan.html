@@ -30,13 +30,12 @@
             <div class="button-container">
                 <button onclick="showSection('consignes')">Consignes</button>
                 <button onclick="showSection('code')">Mon Code et Rendu</button>
-                <button onclick="showSection('correction')">Correction</button>
                 <button onclick="showSection('temps')">Temps nécessaire</button>
             </div>
             <div id="consignes" class="section-content">
                 <h3>Consignes</h3>
                 <p>{{.Description}}</p>
-            </div>
+            </div> 
             <div id="code" class="section-content">
                 <h3>Mon Code</h3>
                 <pre><code class="language-go">{{ .CodeGo }}</code></pre>
@@ -44,10 +43,6 @@
                 <div class="terminal">
                     <pre>{{ .FinalResultCode }}</pre>
                 </div>
-            </div>
-            <div id="correction" class="section-content">
-                <h3>Correction</h3>
-                <p>Décrivez ici la correction de l'épreuve.</p>
             </div>
             <div id="temps" class="section-content">
                 <h3>Temps nécessaire</h3>
