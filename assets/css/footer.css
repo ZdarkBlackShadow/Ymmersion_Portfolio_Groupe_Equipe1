@@ -24,18 +24,14 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
+    width: 30%;
     border: #919191 2px solid;
     border-radius: 20px;
     box-shadow: 5px 5px 20px black;
 }
 
-.divGithub > h4, .divLinkedin > h4{
-    background-color: #15151522;
+.divGithub > img, .divLinkedin > img{
     width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom: #919191 2px solid;
     padding: 15px;
 }
 
