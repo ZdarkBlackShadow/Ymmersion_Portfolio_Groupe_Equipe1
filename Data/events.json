@@ -8,7 +8,7 @@
     {
       "heure": "9:00",
       "titre": "Commencement du projet Ymmersion S2",
-      "description": "Répartition des rôles et création du dossier Ymmersion."
+      "description": "Répartition des rôles"
     },
     {
       "heure":"10:30",
@@ -21,9 +21,9 @@
       "description":"Fin de la pause, reprise du projet."
     },
     {
-      "heure": "12:30",
+      "heure": "12:00",
       "titre": "Pause",
-      "description": "Pause déjeuner."
+      "description": "Pause du midi."
     },
     {
       "heure": "13:30",
