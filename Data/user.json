@@ -43,7 +43,7 @@
       "description": "Fait croire qu'il est vieux avec sa barbe mais c'est un 2004",
       "id": 4,
       "img": "/static/image/Jonathan.jpg",
-      "roleDescription": "Analyse d'un texte",
+      "roleDescription": "développeur frontend",
       "epreuveName": "Analyse d'un texte",
       "descriptionEpreuve": "Écrire un programme qui analyse un texte et qui affiche le nombre de mots, le nombre de caractères et le mot le plus long.",
       "epreuve": "/jonathan"
