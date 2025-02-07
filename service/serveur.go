@@ -7,9 +7,11 @@ import (
 	"net/http"
 )
 
+// Variables globales pour les templates et les épreuves
 var Templates *template.Template
 var ALLEpreuve []Exercice
 
+// Fonction pour convertir une note en séquence
 func seq(nb float64) int {
 	if nb >= 0 && nb < 0.5 {
 		return 0
@@ -36,9 +38,10 @@ func seq(nb float64) int {
 	}
 }
 
+// Fonction d'initialisation du serveur
 func InitServer() {
 	var err error
-	//recuperer toutes les épreuves
+	// Récupérer toutes les épreuves
 	ALLEpreuve, err = GetAllEpreuveData()
 	if err != nil {
 		log.Fatal(err)
@@ -50,6 +53,7 @@ func InitServer() {
 	if err != nil {
 		log.Fatalf("Error parsing templates: %v", err)
 	}
+	// Définir les handlers pour les différentes routes
 	http.HandleFunc("/home", HomeHandler)
 	http.HandleFunc("/tableaudebord", Tableaudebord)
 	http.HandleFunc("/adrien", EpreuveAdrien)
@@ -65,7 +69,7 @@ func InitServer() {
 	http.HandleFunc("/rating", Rating)
 	fileserver := http.FileServer(http.Dir("./assets"))
 	http.Handle("/static/", http.StripPrefix("/static/", fileserver))
-	//Initialisation du serveur
+	// Initialisation du serveur
 	fmt.Println("http://localhost:8080/home")
 	err = http.ListenAndServe("localhost:8080", nil)
 	if err != nil {

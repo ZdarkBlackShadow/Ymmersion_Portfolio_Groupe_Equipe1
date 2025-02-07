@@ -7,14 +7,17 @@ import (
 	"time"
 )
 
+// Structure pour la requête de génération de mot de passe
 type RequestData struct {
 	Length int `json:"length"`
 }
 
+// Structure pour la réponse de génération de mot de passe
 type ResponseData struct {
 	Mdp string `json:"mdp"`
 }
 
+// Handler pour générer un mot de passe
 func GeneratePasswdHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
 		http.Error(w, "Méthode non autorisée", http.StatusMethodNotAllowed)

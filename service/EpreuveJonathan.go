@@ -6,16 +6,19 @@ import (
 	"strings"
 )
 
+// Structure pour la requête d'analyse de texte
 type AnalyseRequest struct {
 	Text string `json:"inputText"`
 }
 
+// Structure pour la réponse d'analyse de texte
 type AnalyseResponse struct {
 	WordCount   int    `json:"wordCount"`
 	CharCount   int    `json:"charCount"`
 	LongestWord string `json:"longestWord"`
 }
 
+// Handler pour analyser un texte
 func TextAnalyser(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
 		http.Error(w, "Méthode non autorisée", http.StatusMethodNotAllowed)

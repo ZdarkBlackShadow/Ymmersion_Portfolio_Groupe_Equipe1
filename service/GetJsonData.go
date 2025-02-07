@@ -7,6 +7,7 @@ import (
 	"os"
 )
 
+// Fonction pour récupérer toutes les données des épreuves
 func GetAllEpreuveData() ([]Exercice, error) {
 	filename := "./data/epreuve.json"
 	file, err := os.Open(filename)
@@ -27,6 +28,7 @@ func GetAllEpreuveData() ([]Exercice, error) {
 	return exercices, nil
 }
 
+// Fonction pour charger les événements
 func loadEvents() (WeekSchedule, error) {
 	file, err := os.Open("./data/events.json")
 	if err != nil {
@@ -44,6 +46,7 @@ func loadEvents() (WeekSchedule, error) {
 	return schedule, nil
 }
 
+// Fonction pour récupérer les données des utilisateurs
 func GetUser() UserStruct {
 	filePath := "./data/user.json"
 	var data UserStruct
