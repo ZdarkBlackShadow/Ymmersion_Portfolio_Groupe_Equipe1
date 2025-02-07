@@ -25,30 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "templates/accueil.html";
         });
     }
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-    Prism.highlightAll();
-});
-
-function showSection(sectionId) {
-    const sections = document.querySelectorAll('.section-content');
-    sections.forEach(section => {
-        section.style.display = 'none';
-    });
-
-    const selectedSection = document.getElementById(sectionId);
-    if (selectedSection) {
-        selectedSection.style.display = 'block';
-    }
-}
-
-document.addEventListener("DOMContentLoaded", function() {
     const formTextAnalyse = document.getElementById("formTextAnalyse");
     if (formTextAnalyse) {
         formTextAnalyse.addEventListener("submit", function(e) {
             e.preventDefault();
-
             const inputText = document.getElementById("inputText").value;
             fetch("/analyzeText", {
                 method: "POST",
@@ -56,7 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 body: JSON.stringify({ inputText: inputText })
             })
             .then(response => { 
-                if (!response.ok) {throw new Error("Erreur lors de l'analyse du texte");
+                if (!response.ok) {
+                    throw new Error("Erreur lors de l'analyse du texte");
                 }
                 return response.json();
             })
@@ -74,5 +56,56 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     }
-
 });
+
+function showSection(sectionId) {
+    const sections = document.querySelectorAll('.section-content');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    const selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
+}
+
+
+
+
+/*
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const formTextAnalyse = document.getElementById("formTextAnalyse");
+    if (formTextAnalyse) {
+        formTextAnalyse.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const inputText = document.getElementById("inputText").value;
+            fetch("/analyzeText", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ inputText: inputText })
+            })
+            .then(response => { 
+                if (!response.ok) {
+                    throw new Error("Erreur lors de l'analyse du texte");
+                }
+                return response.json();
+            })
+            .then(data => {
+                const resultText =
+                " - Résultats de l'analyse :\n" +
+                " - Nombre de mots : " + data.wordCount + "\n" +
+                " - Nombre de caractères (sans espaces) : " + data.charCount + "\n" +
+                " - Mot le plus long : \"" + data.longestWord + "\"";
+                document.getElementById("result").innerText = resultText; 
+            })
+            .catch(error => {
+                console.error("Erreur:", error);
+                document.getElementById("result").innerText = "Une erreur est survenue.";
+            });
+        });
+    }
+});
+*/

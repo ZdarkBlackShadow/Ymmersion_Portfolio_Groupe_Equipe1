@@ -17,7 +17,7 @@
                     <a href="{{.Epreuve}}">
                         <img src="{{.Img}}" alt="Image de {{.Name}}" class="team-member-img">
                         <h3>{{.Name}}</h3>
-                        <h4>Epreuve réalisé : {{.EpreuveName}}</h4>
+                        <h4>Epreuve réalisée : {{.EpreuveName}}</h4>
                         <p>Rôle : {{.RoleDescription}}</p>
                         <p>Description : {{.Description}}</p>
                     </a>
@@ -25,7 +25,7 @@
             {{end}}
         </section>
         <section id="navigation"> 
-            <h2>Épreuve</h2>
+            <h2>Épreuves</h2>
             <nav>
                 <ul>
                     {{range .Data}}
@@ -39,18 +39,21 @@
                 </ul>
             </nav>
         </section>
-                <!--<section id="commentaire">
-            <div class="rating" data-average="{{.Average}}">
+        <section id="commentaire" class="commentaire">
+            <h2>La note de nos utilisateurs</h2>
+            <div class="rating">
+                <img src="/static/image/star/{{seq .Average}}.png">
                 <p>Average Rating: {{printf "%.2f" .Average}}</p>
             </div>
             <div class="comments-box">
+                <h2>Commentaires</h2>
                 {{range .AllAdvice}}
                     <div class="comment">
                         <p>{{.Advice}}</p>
                     </div>
                 {{end}}
             </div>
-        </section>-->
+        </section>
     </main>
     {{template "footer"}}
     <script src="/static/js/accueil.js"></script>
