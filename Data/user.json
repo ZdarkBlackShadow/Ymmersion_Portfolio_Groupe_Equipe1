@@ -70,6 +70,39 @@
     }
   ],
   "allAdvice": [
+    {
+      "note": [
+        5,
+        5,
+        1,
+        5,
+        1,
+        3
+      ],
+      "advice": "Le site est globalement correct, l’interface est agréable, mais manque un peu d’originalité. Avec quelques améliorations, il pourrait devenir excellent."
+    },
+    {
+      "note": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "advice": "Site rapide, intuitif et super design. Tout fonctionne sans accroc, et l’expérience utilisateur est top. Je recommande à 100 % !"
+    },
+    {
+      "note": [
+        5,
+        3,
+        5,
+        3,
+        5,
+        5
+      ],
+      "advice": "Excellent site, fluide et ergonomique !\r\nJ’ai adoré mon expérience sur ce site. La navigation est intuitive, le design est moderne et épuré."
+    }
   ],
-  "average": 5
+  "average": 4.222222222222222
 }
