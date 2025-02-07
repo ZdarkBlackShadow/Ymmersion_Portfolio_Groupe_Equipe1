@@ -51,7 +51,6 @@ func InitServer() {
 		log.Fatalf("Error parsing templates: %v", err)
 	}
 	http.HandleFunc("/home", HomeHandler)
-	http.HandleFunc("/exemple", Exemple)
 	http.HandleFunc("/tableaudebord", Tableaudebord)
 	http.HandleFunc("/adrien", EpreuveAdrien)
 	http.HandleFunc("/alexandre", EpreuveAlexandre)

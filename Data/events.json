@@ -11,6 +11,16 @@
       "description": "Répartition des rôles"
     },
     {
+      "heure":"9:30",
+      "titre":"Création du repo github",
+      "description":"Création du repo sur github plus crétion de l'arboresence du projet."
+    },
+    {
+      "heure":"10:00",
+      "titre":"Travail",
+      "description":"Travail sur chaque partie"
+    },
+    {
       "heure":"10:30",
       "titre": "Pause",
       "description": "Pause de 20 minutes"
@@ -21,6 +31,11 @@
       "description":"Fin de la pause, reprise du projet."
     },
     {
+      "heure":"11:00",
+      "titre":"Epreuve 1",
+      "description":"Réalisation de la première épreuve."
+    },
+    {
       "heure": "12:00",
       "titre": "Pause",
       "description": "Pause du midi."
@@ -28,7 +43,12 @@
     {
       "heure": "13:30",
       "titre": "Fin de pause",
-      "description": "Fin de la pause déjeuner, reprise projet Ymmersion."
+      "description": "Fin de la pause du midi, reprise du projet."
+    },
+    {
+      "heure":"14;00",
+      "titre":"Epreuve 2",
+      "description":"Réalisation de la deuxième épreuve."
     },
     {
       "heure":"15:00",
@@ -49,8 +69,13 @@
   "mardi": [
     {
       "heure": "8:30",
+<<<<<<< HEAD
+      "titre": "Reprise Ymmersion",
+      "description": "Mise en place de chaque membre du groupe."
+=======
       "titre": "Commencement du projet Ymmersion S2",
-      "description": "Consigne et formation des équipes."
+      "description": "Consigne et formation des équipes. Mise en commun et début du travail"
+>>>>>>> 1d363ecae5ed0cbc921c7847c7e952d8f4a55011
     },
     {
       "heure":"10:30",
@@ -85,14 +110,29 @@
     {
       "heure": "17:00",
       "titre": "Fin de journée",
-      "description": "Première journée Ymmersion terminée."
+<<<<<<< HEAD
+      "description": "Deuzième journée Ymmersion terminée."
+=======
+      "description": "Deuxième journée Ymmersion terminée."
+>>>>>>> 1d363ecae5ed0cbc921c7847c7e952d8f4a55011
     }
   ],
   "mercredi": [
     {
       "heure": "8:30",
+<<<<<<< HEAD
+      "titre": "Reprise Ymmersion",
+      "description": "Mise en place de chaque membre du groupe."
+=======
       "titre": "Commencement du projet Ymmersion S2",
-      "description": "Consigne et formation des équipes."
+      "description": "Consigne et formation des équipes. Et travail sur le projet."
+    },
+    {
+      "heure":"10:00",
+      "titre":"Epreuve 3",
+      "description":"Réalisation de la troisième épreuve."
+
+>>>>>>> 1d363ecae5ed0cbc921c7847c7e952d8f4a55011
     },
     {
       "heure":"10:30",
@@ -127,14 +167,23 @@
     {
       "heure": "17:00",
       "titre": "Fin de journée",
-      "description": "Première journée Ymmersion terminée."
+<<<<<<< HEAD
+      "description": "Troisème journée Ymmersion terminée."
+=======
+      "description": "Troisième journée Ymmersion terminée."
+>>>>>>> 1d363ecae5ed0cbc921c7847c7e952d8f4a55011
     }
   ],
   "jeudi": [
     {
       "heure": "8:30",
-      "titre": "Commencement du projet Ymmersion S2",
-      "description": "Consigne et formation des équipes."
+      "titre": "Reprise Ymmersion",
+      "description": "Mise en place de chaque membre du groupe."
+    },
+    {
+      "heure":"10:00",
+      "titre":"Epreuve 4 et 5",
+      "description":"Réalisation de la quatrième et cinquième épreuve."
     },
     {
       "heure":"10:30",
@@ -145,6 +194,11 @@
       "heure":"10:50",
       "titre":"Fin de pause",
       "description":"Fin de la pause, reprise du projet."
+    },
+    {
+      "heure":"11:00",
+      "titre":"Epreuve 6",
+      "description":"Réalisation de la sixième épreuve."
     },
     {
       "heure": "12:30",
@@ -169,14 +223,23 @@
     {
       "heure": "17:00",
       "titre": "Fin de journée",
-      "description": "Première journée Ymmersion terminée."
+<<<<<<< HEAD
+      "description": "Quatrième Ymmersion terminée."
+=======
+      "description": "Quatrième journée Ymmersion terminée."
+>>>>>>> 1d363ecae5ed0cbc921c7847c7e952d8f4a55011
     }
   ],
   "vendredi": [
     {
       "heure": "8:30",
-      "titre": "Commencement du projet Ymmersion S2",
-      "description": "Consigne et formation des équipes."
+<<<<<<< HEAD
+      "titre": "Reprise Ymmersion",
+      "description": "Mise en place de chaque membre du groupe."
+=======
+      "titre": "Reprise du projet Ymmersion S2",
+      "description": "Mise en commun et ajustement du code."
+>>>>>>> 1d363ecae5ed0cbc921c7847c7e952d8f4a55011
     },
     {
       "heure":"10:30",
@@ -186,10 +249,10 @@
     {
       "heure":"10:50",
       "titre":"Fin de pause",
-      "description":"Fin de la pause, reprise du projet."
+      "description":"Fin de la pause, préparation de l'oral."
     },
     {
-      "heure": "12:30",
+      "heure": "12:00",
       "titre": "Pause",
       "description": "Pause déjeuner."
     },
@@ -197,21 +260,24 @@
       "heure": "13:30",
       "titre": "Fin de pause",
       "description": "Fin de la pause déjeuner, reprise projet Ymmersion."
+<<<<<<< HEAD
     },
     {
-      "heure":"15:00",
-      "titre":"Pause",
-      "description": "Pause de 20 minutes"
+      "heure":"14:00",
+      "titre":"Début des oraux",
+      "description": "Début de passage des oraux"
     },
     {
       "heure":"15:20",
       "titre":"Pause",
-      "description":"Fin de la pause, reprise du projet."
+      "description":"Fin de la pause, reprise des oraux."
     },
     {
       "heure": "17:00",
       "titre": "Fin de journée",
-      "description": "Première journée Ymmersion terminée."
+      "description": "Semaine Ymmersion terminée."
+=======
+>>>>>>> 1d363ecae5ed0cbc921c7847c7e952d8f4a55011
     }
   ]
 }

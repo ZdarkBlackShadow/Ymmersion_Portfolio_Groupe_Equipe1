@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/tbd.css">
-    <title>Tableau de bord</title>
+    <title>Avis Clients</title>
 
 </head>
 <body>
     {{template "header"}}
     <div class="container">
-        <h1 class="titre">Bienvenue sur le tableau de bord</h1>
+        <h1 class="titre">Laissez nous votre avis ici !</h1>
             <div class="rating-buttons">
                 <form action="/rating" method="post">
                     {{range .Data}}
@@ -35,7 +35,7 @@
                     {{end}}
                     <div class="advice">
                         <label for="advice"></label>
-                        <textarea name="advice" id="advice" placeholder="Avis général pour les différentes épreuve" required maxlength="174"></textarea>
+                        <textarea name="advice" id="advice" placeholder="Avis général pour les différentes épreuves" required maxlength="174"></textarea>
                     </div>
                     <button type="submit" class="valider">Valider</button>
                 </form>

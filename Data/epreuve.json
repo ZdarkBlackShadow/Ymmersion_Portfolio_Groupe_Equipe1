@@ -57,7 +57,7 @@
         "finalResultCode":"🔄 Bienvenue dans le jeu du Palindrome !\n➡️  Entrez un mot ou une phrase (ou tapez 'exit' pour quitter) :\n> test\n❌ Ce n'est pas un palindrome.\n> kayak\n✅ C'est un palindrome ! 🎉\n> exit\n👋 Merci d'avoir joué ! À bientôt !",
         "timerInMinute":30,
         "when":"Jeudi 10H00",
-        "learningLesson":[]
+        "learningLesson":["Analyse de caradctére", "Utilisation de scaner avec bufio"]
     },
     {
         "id":5,
