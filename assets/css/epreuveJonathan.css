@@ -158,7 +158,6 @@ button:hover {
 }
 
 .terminal {
-    background: #1e1e1e;
     color: #ffffff;
     padding: 20px;
     border-radius: 5px;
@@ -168,7 +167,6 @@ button:hover {
     width: 80%;
     height: auto; /* Adjust height to fit content */
     overflow: visible; /* Ensure no scroll */
-    border: 2px solid #888; /* Add gray border */
 }
 
 .container {
