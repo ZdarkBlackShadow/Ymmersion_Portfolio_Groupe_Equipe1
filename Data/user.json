@@ -13,7 +13,7 @@
       "description": "L'alcoolo originel, son idole s'appelle 'Défonce sans modération' et il n'est jamais à l'heure",
       "id": 1,
       "img": "/static/image/Alexandre.webp",
-      "roleDescription": "développeur frontend",
+      "roleDescription": "Développeur frontend",
       "epreuveName": "Dessiner une tête de creeper",
       "descriptionEpreuve": "A l'aide des langages html et css, reproduire une grosse tête de creeper venant du jeu vidéo Minecraft",
       "epreuve": "/alexandre"
@@ -23,7 +23,7 @@
       "description": "Toujours présent pour s'amuser et faire des folies tout en respectant les autres",
       "id": 2,
       "img": "/static/image/Adrien.jpg",
-      "roleDescription": "développeur backend",
+      "roleDescription": "Développeur backend",
       "epreuveName": "Devinette d'un nombre",
       "descriptionEpreuve": "Le programme génère un nombre aléatoire et l'utilisateur doit réussir a le trouver avec le moins de tentatives possibles",
       "epreuve": "/adrien"
@@ -33,7 +33,7 @@
       "description": "Toujours fatigué avec de grosses cernes",
       "id": 3,
       "img": "/static/image/Alexis.jpg",
-      "roleDescription": "développeur fullstack",
+      "roleDescription": "Développeur fullstack",
       "epreuveName": "Créer un mot de passe aléatoire",
       "descriptionEpreuve": "Créer un mot de pase de manière aléatoire avec des chiffres, des lettre minuscules et majuscules et des symbôles",
       "epreuve": "/alexis"
@@ -43,7 +43,7 @@
       "description": "Fait croire qu'il est vieux avec sa barbe mais c'est un 2004",
       "id": 4,
       "img": "/static/image/Jonathan.jpg",
-      "roleDescription": "développeur frontend",
+      "roleDescription": "Développeur frontend",
       "epreuveName": "Analyse d'un texte",
       "descriptionEpreuve": "Écrire un programme qui analyse un texte et qui affiche le nombre de mots, le nombre de caractères et le mot le plus long.",
       "epreuve": "/jonathan"
@@ -53,7 +53,7 @@
       "description": "Tout nouvel élève et il est prêt à tout pour réussir",
       "id": 5,
       "img": "/static/image/Kellyan.jpg",
-      "roleDescription": "développeur frontend",
+      "roleDescription": "Développeur frontend",
       "epreuveName": "Savoir si un mot est un palindrome ou non",
       "descriptionEpreuve": "Écrire un programme qui vérifie si un mot ou une phrase (sans espaces) est un palindrome (ex: 'radar', 'kayak').",
       "epreuve": "/kellyan"
@@ -63,7 +63,7 @@
       "description": "Regrette la période où il avait ses cheveux",
       "id": 6,
       "img": "/static/image/Yoan.jpg",
-      "roleDescription": "développeur fullstack",
+      "roleDescription": "Développeur fullstack",
       "epreuveName": "Vérifier si un mot de passe est complexe ou non",
       "descriptionEpreuve": "Écrire un programme qui évalue un mot de passe et affiche son niveau de sécurité (faible, moyen, fort).",
       "epreuve": "/yoan"
