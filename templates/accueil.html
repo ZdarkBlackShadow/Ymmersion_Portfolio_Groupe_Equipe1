@@ -39,18 +39,21 @@
                 </ul>
             </nav>
         </section>
-                <!--<section id="commentaire">
-            <div class="rating" data-average="{{.Average}}">
+        <section id="commentaire" class="commentaire">
+            <h2>Commentaires</h2>
+            <div class="rating">
+                <img src="/static/image/star/{{seq .Average}}.png">
                 <p>Average Rating: {{printf "%.2f" .Average}}</p>
             </div>
             <div class="comments-box">
+                <h2>Les avis générales</h2>
                 {{range .AllAdvice}}
                     <div class="comment">
                         <p>{{.Advice}}</p>
                     </div>
                 {{end}}
             </div>
-        </section>-->
+        </section>
     </main>
     {{template "footer"}}
     <script src="/static/js/accueil.js"></script>
