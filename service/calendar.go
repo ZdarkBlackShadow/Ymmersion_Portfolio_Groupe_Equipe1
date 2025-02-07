@@ -4,6 +4,7 @@ import (
 	"net/http"
 )
 
+// Handler pour afficher le calendrier
 func calendarHandler(w http.ResponseWriter, r *http.Request) {
 	schedule, err := loadEvents()
 	if err != nil {

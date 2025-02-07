@@ -9,10 +9,12 @@ import (
 	"strconv"
 )
 
+// Handler pour la notation
 func Rating(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodPost {
 		var listOfNotes []int
 		var value string
+		// Récupérer les notes du formulaire
 		for _, id := range []string{"1", "2", "3", "4", "5", "6"} {
 			value = r.FormValue("rating_" + id)
 			if value == "" {
@@ -26,12 +28,13 @@ func Rating(w http.ResponseWriter, r *http.Request) {
 				listOfNotes = append(listOfNotes, valeur)
 			}
 		}
+		// Récupérer le conseil du formulaire
 		advice := r.FormValue("advice")
 		if advice == "" {
 			http.Error(w, "Veuillez renseigner un conseil", http.StatusBadRequest)
 			return
 		}
-		// Ajout de la note et du conseil dans la base de données
+		// Ajouter la note et le conseil dans la base de données
 		DataToadd := Advice{Note: listOfNotes, Advice: advice}
 		var total float64
 		var count int
@@ -59,7 +62,7 @@ func Rating(w http.ResponseWriter, r *http.Request) {
 			}
 		}
 		Data.Average = total / float64(count)
-		// Enregistrement des données
+		// Enregistrer les données
 		file, err = os.Create(filename)
 		if err != nil {
 			log.Fatal(err)

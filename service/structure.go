@@ -1,6 +1,6 @@
 package service
 
-//Structures pour les membres du groupe
+// Structures pour les membres du groupe
 type User struct {
 	Name               string `json:"name"`
 	Description        string `json:"description"`
@@ -12,10 +12,13 @@ type User struct {
 	Epreuve            string `json:"epreuve"`
 }
 
+// Structure pour les conseils et notes
 type Advice struct {
 	Note   []int  `json:"note"`
 	Advice string `json:"advice"`
 }
+
+// Structure pour les données des utilisateurs
 type UserStruct struct {
 	List      []string `json:"list"`
 	Data      []User   `json:"data"`
@@ -23,7 +26,7 @@ type UserStruct struct {
 	Average   float64  `json:"average"`
 }
 
-//Structure pour les epreuves
+// Structure pour les épreuves
 type Exercice struct {
 	ID               int      `json:"id"`
 	Name             string   `json:"name"`
@@ -40,11 +43,10 @@ type Exercice struct {
 	LearningLesson   []string `json:"learningLesson"`
 }
 
+// Structure pour les données du tableau de bord
 type DataTDB struct {
 	Datatdb string
 }
-
-//Structure pour le calendrier
 
 // Structure pour représenter un événement
 type Event struct {
