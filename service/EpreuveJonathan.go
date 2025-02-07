@@ -2,17 +2,9 @@ package service
 
 import (
 	"encoding/json"
-	"log"
 	"net/http"
 	"strings"
 )
-
-func EpreuveJonathan(w http.ResponseWriter, r *http.Request) {
-	err := Templates.ExecuteTemplate(w, "jonathan", ALLEpreuve[4])
-	if err != nil {
-		log.Fatal(err)
-	}
-}
 
 type AnalyseRequest struct {
 	Text string `json:"inputText"`

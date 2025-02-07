@@ -2,18 +2,10 @@ package service
 
 import (
 	"encoding/json"
-	"log"
 	"math/rand"
 	"net/http"
 	"time"
 )
-
-func EpreuveAlexis(w http.ResponseWriter, r *http.Request) {
-	err := Templates.ExecuteTemplate(w, "alexis", ALLEpreuve[2])
-	if err != nil {
-		log.Fatal(err)
-	}
-}
 
 type RequestData struct {
 	Length int `json:"length"`
