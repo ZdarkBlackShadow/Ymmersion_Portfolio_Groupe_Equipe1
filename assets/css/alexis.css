@@ -55,7 +55,7 @@ body {
 /* Style du contenu des onglets */
 .tab-content {
     display: none;
-    padding: 20px;
+    padding: 2px;
     background-color: #7b7b7b;
     height: calc(100% - 50px);
     /* Ajuste la hauteur du contenu */
