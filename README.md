@@ -26,9 +26,9 @@ git clone https://github.com/ZdarkBlackShadow/Ymmersion_Portfolio_Groupe_Equipe1
 ```
 
 # 👥 Équipe du projet
-- Adrien Lecomte  :  [Github](https://github.com/ZdarkBlackShadow)
-- Alexandre Petitfrere  :  [Github](https://github.com/Mirkium)
-- Jonathan Perez  :  [Github](https://github.com/Jonathan-p-z)
-- Yoan Commeau  :  [Github](https://github.com/Urgalute)
-- Alexis Dupin  :  [Github](https://github.com/Linijarae)
-- Kelyann Icardi  :  [github](https://github.com/StorkX13)
+- Adrien Lecomte  :  [Github](https://github.com/ZdarkBlackShadow) | [Linkedin](https://www.linkedin.com/in/adrien-lecomte-0710a82b5/)
+- Alexandre Petitfrere  :  [Github](https://github.com/Mirkium) | [Linkedin](https://www.linkedin.com/in/alexandre-petitfrere-68a64828b/)
+- Jonathan Perez  :  [Github](https://github.com/Jonathan-p-z) | [Linkedin](https://www.linkedin.com/in/jonathan-perez-b4b919330/)
+- Yoan Commeau  :  [Github](https://github.com/Urgalute) | [Linkedin](https://fr.linkedin.com/in/yoan-commeau-2b9a8328b)
+- Alexis Dupin  :  [Github](https://github.com/Linijarae)  [Linkedin](https://www.linkedin.com/in/alexisdupin1993?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
+- Kelyann Icardi  :  [github](https://github.com/StorkX13) | [Linkedin](https://www.linkedin.com/in/kellyan-icardi-a469a434b/)
