@@ -3,13 +3,29 @@ footer {
     color: #E6ECFF;
     text-align: center;
     padding: 20px ;
-    margin-top: 5px;
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
     animation: fadeIn 1.5s ease-in-out;
+    box-sizing: border-box;
 }
 
 footer p {
     margin: 0;
     font-size: 0.9em;
+}
+
+.lienEquipe {
+    display: flex;
+    justify-content: space-around;
+}
+
+.divGithub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3%;
+    width: 45%;
 }
 
 .lienGithub {
@@ -19,4 +35,21 @@ footer p {
 
 .lienGithub:hover {
     color: goldenrod;
+}
+
+.divLinkedin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3%;
+    width: 45%;
+}
+
+.lienLinkedin {
+    text-decoration: none;
+    color: #fff;
+}
+
+.lienLinkedin:hover {
+    color: aqua;
 }
